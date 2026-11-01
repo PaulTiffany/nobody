@@ -7,10 +7,11 @@ AUDIO=$(realpath "$1")
 OUT=$(realpath -m "${2:-$ROOT/output/nobody-front-back-cut.mp4}")
 FPS=${3:-12}
 cd "$ROOT"
+echo "STORYBOARD ONLY: visual cuts are not synchronized to sung lyrics" >&2
 python scripts/check_scene_cues.py
 # Cache is invalidated when the song, scene schedule, source, or fps changes.
 # This prevents edited crossings from silently reusing old frames.
-FINGERPRINT=$({ sha256sum production/film.py production/render.py production/scene_cues.json "$AUDIO"; printf 'fps=%s\n' "$FPS"; } | sha256sum | cut -c1-16)
+FINGERPRINT=$({ sha256sum production/film.py production/render.py production/scene_cues.storyboard.json "$AUDIO"; printf 'fps=%s\n' "$FPS"; } | sha256sum | cut -c1-16)
 CACHE=".renders/frontback-$FINGERPRINT"
 mkdir -p "$CACHE" "$(dirname "$OUT")"
 : > "$CACHE/concat.txt"
@@ -28,6 +29,7 @@ VALID
     rm -f "$CACHE/$f"
     echo "Rendering $f  t=$start sec"
     python production/film.py --wav "$AUDIO" --fps "$FPS" \
+      --scene-cues production/scene_cues.storyboard.json \
       --start "$start" --duration "$duration" --out "$CACHE/$f" \
       --preset veryfast --crf 28 --karaoke off
   fi

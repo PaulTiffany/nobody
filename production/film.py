@@ -31,7 +31,7 @@ def load_scene_cues(path=SCENE_CUES_PATH):
     assert all(a['direction'] != b['direction'] for a,b in zip(transitions,transitions[1:]))
     return transitions
 
-TRANSITIONS = load_scene_cues()
+TRANSITIONS = []  # Loaded after command-line validation; no unverified defaults
 
 
 def load_timeline(path):
@@ -286,7 +286,13 @@ def film_frame(t,env,start,data,karaoke='off'):
 
 
 def main(args):
+    global TRANSITIONS
     wav=Path(args.wav).resolve();out=Path(args.out).resolve()
+    TRANSITIONS = load_scene_cues(args.scene_cues)
+    if Path(args.scene_cues).resolve() == (ROOT/'production/scene_cues.json').resolve():
+        content=json.loads(Path(args.scene_cues).read_text(encoding='utf-8'))
+        if content.get('timing_status') != 'aligned_and_creator_reviewed':
+            raise ValueError('Live scene cues must come from a reviewed Enhanced LRC; draft timing is blocked')
     timeline=load_timeline(args.cues)
     if args.karaoke=='verified':
         check_word_alignment(timeline,require_complete=True)
@@ -322,6 +328,7 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--wav',required=True)
     p.add_argument('--cues',default=str(ROOT/'production/lyrics_draft.json'))
+    p.add_argument('--scene-cues',default=str(SCENE_CUES_PATH), help='Requires reviewed scene_cues.json; storyboard must be explicitly selected')
     p.add_argument('--out',default=str(ROOT/'output/full-draft.mp4'))
     p.add_argument('--start',type=float,default=0)
     p.add_argument('--duration',type=float,default=DURATION)

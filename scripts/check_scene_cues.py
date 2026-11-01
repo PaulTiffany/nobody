@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-data=json.loads((ROOT/'production/scene_cues.json').read_text())
+data=json.loads((ROOT/'production/scene_cues.storyboard.json').read_text())
 transitions=data['transitions']
 assert data['schema']==1
 assert data['timing_status']=='storyboard_estimate_not_vocal_aligned'

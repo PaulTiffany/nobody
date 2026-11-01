@@ -9,7 +9,7 @@ This is an **Artilect production**, not a new karaoke application. Make a film u
 - `output/silent-other-side.mp4`: a short, **actual** silent visual prototype generated with Pillow and FFmpeg; `output/front.png` and `output/back.png` are still art references.
 - `output/nobody-front-back-silent.mp4`: current **full-length (4:23) silent animated backdrop**, front during verses/bridge and reverse-side rave during instrumental/refrain passages. Locally rendered, excluded from Git because it is a large deliverable.
 - `output/scene-flips-preview.mp4`: small **public** silent excerpt showing the front → rave → front cycle.
-- `production/scene_cues.json`: creator's crossing schedule, deliberately marked as **storyboard estimates, not singer-verified onsets**.
+- `production/scene_cues.storyboard.json`: **obsolete guesses for reference only**. The real `production/scene_cues.json` is deliberately absent until vocal alignment is available.
 
 ## 1. Sync the real vocals with ELYSY (upstream)
 
@@ -49,7 +49,7 @@ ffmpeg -y -i output/nobody-front-back-cut.mp4 -map 0:v:0 \
   -c:v copy -an output/nobody-front-back-silent.mp4
 ```
 
-**Current scene gates are rough visual storyboard times**, not sung-word verification. The *other side* crossings begin near **92.6, 180.8 and 237.6 seconds**, with returns to the front near **109.6, 190.0 and 258.3 seconds**. These are editable in `production/scene_cues.json`; check them by listening before release. A completed vocal alignment from ELYSY should inform final scene synchronization. No custom aligner, timestamp distributor, or handwritten karaoke timing is part of this workflow.
+**The previously published cuts were guesses and must not be used for the final video.** After ELYSY exports the word-timed LRC and the producer reviews it by ear, use `scripts/derive_scene_cues.py --lrc /path/to/nobody.enhanced.lrc --wav /path/to/Nobody.wav`. It produces an **unverified candidate** in `production/scene_cues.candidate.json`, with the actual sung phrase timestamps and source-file hashes. Listen against the recording and correct timing in ELYSY, then promote the reviewed candidate to `production/scene_cues.json` and change `timing_status` to `aligned_and_creator_reviewed`. `film.py` refuses ordinary video renders while that reviewed file is absent. `render_storyboard.sh` is explicitly a demonstration of old draft choreography and cannot establish vocal sync.
 
 ## Rights / publication / checks
 
@@ -60,4 +60,4 @@ python scripts/validate.py
 python scripts/check_timeline.py
 ```
 
-The structure validator checks Git submodule provenance and metadata. It cannot claim that ELYSY finished alignment, that MV Studio exported a video, or that Suno rights are cleared. Submission to Artilect must wait for an actual, reviewed finished film and creator permission for publication.
+Run `python scripts/test_derive_scene_cues.py` for semantic cue mapping tests; they use synthetic fixtures and **do not certify any real-song timing**. The structure validator checks Git submodule provenance and metadata. It cannot claim that ELYSY finished alignment, that MV Studio exported a video, or that Suno rights are cleared. Submission to Artilect must wait for an actual, reviewed finished film and creator permission for publication.

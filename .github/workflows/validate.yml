@@ -16,4 +16,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check production structure (never execute upstream technologies)
-        run: python scripts/validate.py
+        run: |
+          python scripts/validate.py
+          python scripts/check_scene_cues.py
+          python scripts/test_derive_scene_cues.py

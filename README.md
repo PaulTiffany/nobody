@@ -25,7 +25,7 @@ All four are **direct Git submodules** under `technologies/`, pinned to exact or
 
 Read [**production/README.md**](production/README.md) for the actual production steps. Briefly: align the real WAV and written lyrics in **ELYSY**; review them by ear; export Enhanced LRC; import LRC, sound, and our silent parallax video into **UseSuno MV Studio**; style and export the karaoke film. **The written lyrics are available** in [`production/lyrics/Nobody-Owns-Tomorrow.txt`](production/lyrics/Nobody-Owns-Tomorrow.txt).
 
-The visuals are reproducible with the time-indexed Pillow artwork in `production/film.py` and the **six reversible pegboard crossings in `production/scene_cues.json`**. Run `bash production/render_storyboard.sh /path/to/song.wav` to reproduce the current full-length visual cut; karaoke stays off and will be supplied by ELYSY + MV Studio. The marked crossing times are creator-directed storyboard estimates, **not verified vocal alignment**. The rejected earlier hand-made lyric timer and its unreliable timestamps are not part of this new upstream-first pathway.
+The visuals are reproducible with the time-indexed Pillow artwork in `production/film.py` and the **six reversible pegboard crossings in `production/scene_cues.storyboard.json`**. Run `bash production/render_storyboard.sh /path/to/song.wav` to reproduce the current full-length visual cut; karaoke stays off and will be supplied by ELYSY + MV Studio. The marked crossing times are creator-directed storyboard estimates, **not verified vocal alignment**. The rejected earlier hand-made lyric timer and its unreliable timestamps are not part of this new upstream-first pathway.
 
 ## Finished vs unfinished
 
@@ -38,3 +38,8 @@ The visuals are reproducible with the time-indexed Pillow artwork in `production
 When the **finished** movie has been reviewed and media permissions checked, run `python scripts/validate.py` and [drop the production repo](https://github.com/PaulTiffany/artilect/issues/new?template=stack.yml). Each upstream project retains its license. Creative choices, publishing and attribution belong to the producer.
 
 **Nobody owns tomorrow. Nobody owns the sky.**
+
+
+### Alignment gate (November 1, 2026)
+
+The visual crossings published so far were **not synchronized with the actual singing**. They are **not the finished music video**. We will not guess more timecodes: the real `production/scene_cues.json` has intentionally been withheld. `scripts/derive_scene_cues.py` turns ELYSY **Enhanced LRC word timing** into front/reverse scene cues, requiring a listening review before they may be used as live cuts. See `production/README.md`.
