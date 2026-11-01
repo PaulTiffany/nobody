@@ -19,8 +19,19 @@ W,H=core.W,core.H
 FPS=16
 DURATION=263.24
 PALETTE=core.PALETTE
-FRONT_TO_BACK=95.0
-BACK_TO_FRONT=240.2
+SCENE_CUES_PATH = ROOT/'production'/'scene_cues.json'
+
+def load_scene_cues(path=SCENE_CUES_PATH):
+    data=json.loads(Path(path).read_text(encoding='utf-8'))
+    transitions=data['transitions']
+    assert data['schema'] == 1
+    assert all(0 <= e['start'] < e['end'] <= DURATION for e in transitions)
+    assert all(a['end'] <= b['start'] for a,b in zip(transitions,transitions[1:]))
+    assert all(e['direction'] in ('front_to_back','back_to_front') for e in transitions)
+    assert all(a['direction'] != b['direction'] for a,b in zip(transitions,transitions[1:]))
+    return transitions
+
+TRANSITIONS = load_scene_cues()
 
 
 def load_timeline(path):
@@ -70,48 +81,71 @@ def draw_refracted_overlay(img,t,energy,origin=(480,255),vivid=False):
     return Image.alpha_composite(im,overlay).convert('RGB')
 
 
+def side_at(t, transitions=TRANSITIONS):
+    """The user-directed stage choreography: each return to a verse faces front."""
+    side='front'
+    for event in transitions:
+        if t < event['start']: return side
+        if t < event['end']: return 'crossing'
+        side='back' if event['direction']=='front_to_back' else 'front'
+    return side
+
+
+def portal_frame(t,energy,event):
+    """A physical peephole: push into a glowing peg, emerge behind the board.
+
+    Drawn at one absolute playback time, so renders remain chunk-independent.
+    The iris is a spotlight-shaped mask, not a text or lyric timing substitute.
+    """
+    p=core.smooth((t-event['start'])/(event['end']-event['start']))
+    incoming_front=(event['direction']=='back_to_front')
+    exit_side='front' if incoming_front else 'back'
+    back=core.draw_back(t,energy,show_tag=False)
+    front=core.draw_front(t,energy,event['end'] if not incoming_front else 10000,show_tag=False)
+    base=back if incoming_front else front
+    destination=front if incoming_front else back
+    # At the start, the illuminated peg is a tiny aperture. It expands until
+    # it fills the entire screen and becomes the other face of the board.
+    q=core.smooth((p-.12)/.81)
+    radius=max(1,int(2+(W*1.03)*q**1.45))
+    cx,cy=W//2,int(H*.47)
+    mask=Image.new('L',(W,H),0)
+    m=ImageDraw.Draw(mask)
+    m.ellipse((cx-radius,cy-radius,cx+radius,cy+radius),fill=255)
+    mask=mask.filter(ImageFilter.GaussianBlur(12))
+    base.paste(destination,(0,0),mask)
+    # Colored acrylic diffraction as the camera passes the aperture rim.
+    ring=Image.new('RGBA',(W,H),(0,0,0,0)); d=ImageDraw.Draw(ring,'RGBA')
+    for n in range(7):
+        r=max(1,radius+7+n*13)
+        alpha=int(105*(1-q)**.75*(1-n/8))
+        if alpha<2: continue
+        color=PALETTE[(n+int(event['start']))%len(PALETTE)]
+        d.ellipse((cx-r,cy-r,cx+r,cy+r),outline=(*color,alpha),width=4)
+    # A brief point of light crosses the lens on the arrival downbeat.
+    alpha=int(100*math.exp(-((p-.60)/.14)**2))
+    if alpha:
+        d.ellipse((cx-70,cy-70,cx+70,cy+70),fill=(246,229,255,alpha))
+    return Image.alpha_composite(base.convert('RGBA'),ring).convert('RGB'), 'crossing'
+
+
 def scene(t,energy):
-    if t < FRONT_TO_BACK:
-        im=core.draw_front(t,energy,FRONT_TO_BACK,show_tag=False)
-        if t>FRONT_TO_BACK-1.2:
-            f=core.smooth((t-(FRONT_TO_BACK-1.2))/1.2)
-            # The forward rush becomes a rainbow diffraction before the cut.
-            im=draw_refracted_overlay(im,t,energy,vivid=True)
-            im=Image.blend(im,Image.new('RGB',(W,H),(240,232,255)),min(.81,f*.74))
-        return im,'front'
-    if t < 184:
-        im=core.draw_back(t-FRONT_TO_BACK,energy,show_tag=False)
-        if t<FRONT_TO_BACK+.5:
-            f=core.smooth((t-FRONT_TO_BACK)/.5)
-            im=Image.blend(Image.new('RGB',(W,H),(238,236,255)),im,f)
-        return im,'back'
-    if t < 210:
-        # Quiet bridge: the lights remain alive but the rave recedes into
-        # an introspective, slowly rotating tunnel.
-        im=core.draw_back(t-FRONT_TO_BACK,energy*.52,show_tag=False)
-        im=Image.blend(im,core.BG,.25)
-        im=draw_refracted_overlay(im,t,energy,vivid=True)
-        return im,'bridge'
-    if t < BACK_TO_FRONT:
-        im=core.draw_back(t-FRONT_TO_BACK,energy,show_tag=False)
-        # Brief apertures reveal the FRONT and REVERSE are the same system.
-        # Blend only near major musical turns, keeping the rest legible.
-        if (211<t<216) or (231<t<236):
-            f= .31+.27*math.sin(t*.63)
-            im=Image.blend(im,core.draw_front(t,energy,10000,show_tag=False),f)
-        return im,'together'
-    im=core.draw_front(t,energy,10000,show_tag=False)
-    if t<BACK_TO_FRONT+.6:
-        f=core.smooth((t-BACK_TO_FRONT)/.6)
-        im=Image.blend(Image.new('RGB',(W,H),(236,233,255)),im,f)
-    if t>259:
-        # The deliberately isolated last peg switches on as the music dies.
-        k=core.smooth((t-260.0)/1.9)
-        d=ImageDraw.Draw(im,'RGBA')
-        cx,cy=482,151
-        for r,alpha in [(43,int(18*k)),(24,int(65*k)),(10,int(140*k)),(4,int(240*k))]:
-            d.ellipse((cx-r,cy-r,cx+r,cy+r),fill=(255,222,118,alpha))
-    return im,'outro'
+    for event in TRANSITIONS:
+        if event['start'] <= t < event['end']:
+            return portal_frame(t,energy,event)
+    side=side_at(t)
+    if side=='front':
+        im=core.draw_front(t,energy,10000,show_tag=False)
+        # The final point of light illuminates on the familiar front face.
+        if t>260.8:
+            k=core.smooth((t-260.8)/1.9)
+            bloom=Image.new('RGBA',(W,H),(0,0,0,0));d=ImageDraw.Draw(bloom,'RGBA')
+            cx,cy=482,151
+            for r,alpha in [(43,int(22*k)),(24,int(65*k)),(10,int(140*k)),(4,int(240*k))]:
+                d.ellipse((cx-r,cy-r,cx+r,cy+r),fill=(255,222,118,alpha))
+            im=Image.alpha_composite(im.convert('RGBA'),bloom).convert('RGB')
+        return im, 'front'
+    return core.draw_back(t,energy,show_tag=False), 'back'
 
 
 def lyric_overlay(im,t,cues,sections,mode,unverified=True):

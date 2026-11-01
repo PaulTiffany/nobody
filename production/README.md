@@ -7,7 +7,9 @@ This is an **Artilect production**, not a new karaoke application. Make a film u
 - Your own properly licensed copy of **Nobody Owns Tomorrow.wav**. It is intentionally **not** in Git.
 - `production/lyrics/Nobody-Owns-Tomorrow.txt`: the *written* song lyrics, not yet checked against the sung take. Correct every repeat, ad lib and changed word by listening.
 - `output/silent-other-side.mp4`: a short, **actual** silent visual prototype generated with Pillow and FFmpeg; `output/front.png` and `output/back.png` are still art references.
-- `output/nobody-background-silent.mp4`: optional **full-length** animated backdrop generated locally; it is ignored by Git because large exports belong outside the source repo.
+- `output/nobody-front-back-silent.mp4`: current **full-length (4:23) silent animated backdrop**, front during verses/bridge and reverse-side rave during instrumental/refrain passages. Locally rendered, excluded from Git because it is a large deliverable.
+- `output/scene-flips-preview.mp4`: small **public** silent excerpt showing the front → rave → front cycle.
+- `production/scene_cues.json`: creator's crossing schedule, deliberately marked as **storyboard estimates, not singer-verified onsets**.
 
 ## 1. Sync the real vocals with ELYSY (upstream)
 
@@ -40,14 +42,14 @@ A small bespoke visual **artwork generator**, NOT a karaoke renderer: Pillow dra
 python -m pip install 'Pillow==12.3.0'
 # Provide FFmpeg with H.264 and AAC (or change the encoder settings).
 python scripts/check_timeline.py
-bash production/render_full.sh '/path/to/Nobody Owns Tomorrow.wav' \
-  output/private-full-visuals-with-audio.mp4 off
+bash production/render_storyboard.sh '/path/to/Nobody Owns Tomorrow.wav' \
+  output/nobody-front-back-cut.mp4 12
 # Strip audio before importing as Custom media in the lyric studio:
-ffmpeg -y -i output/private-full-visuals-with-audio.mp4 -map 0:v:0 \
-  -c:v copy -an output/nobody-background-silent.mp4
+ffmpeg -y -i output/nobody-front-back-cut.mp4 -map 0:v:0 \
+  -c:v copy -an output/nobody-front-back-silent.mp4
 ```
 
-**Current film cues are rough visual storyboard times**, not musical or vocal synchronization. The board crossing is currently keyed to about 95 seconds; move it after listening to the actual break. No custom aligner, timestamp distributor or text overlay is part of this final workflow.
+**Current scene gates are rough visual storyboard times**, not sung-word verification. The *other side* crossings begin near **92.6, 180.8 and 237.6 seconds**, with returns to the front near **109.6, 190.0 and 258.3 seconds**. These are editable in `production/scene_cues.json`; check them by listening before release. A completed vocal alignment from ELYSY should inform final scene synchronization. No custom aligner, timestamp distributor, or handwritten karaoke timing is part of this workflow.
 
 ## Rights / publication / checks
 

@@ -2,11 +2,11 @@
 
 **There's a whole party on the other side of the lightboard.** 🎶✨
 
-[**Watch the actual 12-second silent concept film**](output/silent-other-side.mp4) · [Front](output/front.png) · [Reverse: the rave](output/back.png)
+[**Watch the front → rave → front scene test (silent)**](output/scene-flips-preview.mp4) · [Front](output/front.webp) · [Reverse: the rave](output/back.webp)
 
-![Glowing lightboard city](output/front.png)
+![Glowing lightboard city](output/front.webp)
 
-The song starts with a lonely, glowing pegboard city. As the chorus reaches *“on the other side,”* the camera passes through a peg into a joyful miniature neon rave. From there, the music video becomes a parallax karaoke performance, with the lyrics dancing in front of the worlds rather than pretending to be the world.
+The song starts with a lonely, glowing pegboard city. On *“on the other side,”* we travel through a peg to a jubilant miniature rave. **When the next verse begins, we return to the front.** This repeats: front for the vocal storytelling, behind the board for each *other side* refrain and instrumental dance break. The final shot comes back to one isolated light. The planned karaoke is layered later with upstream tools, not faked with estimated word timing.
 
 This is for [**Artilect**](https://github.com/PaulTiffany/artilect): bring the subs, drop the stack, pass the mic, all glory upstream. **Nobody is a production recipe and an art project, not a new karaoke app.**
 
@@ -25,11 +25,11 @@ All four are **direct Git submodules** under `technologies/`, pinned to exact or
 
 Read [**production/README.md**](production/README.md) for the actual production steps. Briefly: align the real WAV and written lyrics in **ELYSY**; review them by ear; export Enhanced LRC; import LRC, sound, and our silent parallax video into **UseSuno MV Studio**; style and export the karaoke film. **The written lyrics are available** in [`production/lyrics/Nobody-Owns-Tomorrow.txt`](production/lyrics/Nobody-Owns-Tomorrow.txt).
 
-The visuals are reproducible with the small, time-indexed Pillow drawing script in `production/film.py` plus FFmpeg; **run it with `--karaoke off`**. The rejected earlier hand-made lyric timer and its unreliable timestamps are not part of this new upstream-first pathway.
+The visuals are reproducible with the time-indexed Pillow artwork in `production/film.py` and the **six reversible pegboard crossings in `production/scene_cues.json`**. Run `bash production/render_storyboard.sh /path/to/song.wav` to reproduce the current full-length visual cut; karaoke stays off and will be supplied by ELYSY + MV Studio. The marked crossing times are creator-directed storyboard estimates, **not verified vocal alignment**. The rejected earlier hand-made lyric timer and its unreliable timestamps are not part of this new upstream-first pathway.
 
 ## Finished vs unfinished
 
-- **Made and verified:** a real 12-second silent visual proof; original front and reverse art; local full-length storyboard experiment (visual-only video can be generated with the included recipe).
+- **Made and verified:** an actual 4:23 audio-backed visual draft, a separate 4:23 silent background for MV Studio, a short public *front → back → front* scene test, plus the original art and source recipe. The full soundtrack cut is local/private, not in public Git.
 - **Not yet claimed:** accurate vocal timing, a real ELYSY alignment receipt, a UseSuno MV Studio export, or a completed Artilect showcase submission. No fabricated “karaoke passing” receipt.
 - **Rights:** Suno recording provided privately by the song's creator. Recording and large full film intentionally excluded from Git; verify distribution rights before publishing audio. Original visual artwork is ours; the toy imagery is not an official Lite-Brite collaboration.
 

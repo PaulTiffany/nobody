@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "timing_status": "storyboard_estimate_not_vocal_aligned",
+  "description": "The front is the verse world. The spoken/sung 'on the other side' leads into the reverse-side rave. Returning vocals turn the board back toward the listener. Time markers are provisional until song alignment is reviewed.",
+  "transitions": [
+    {"start": 92.6, "end": 95.0, "direction": "front_to_back", "cue": "chorus_1: On the other side"},
+    {"start": 109.6, "end": 111.2, "direction": "back_to_front", "cue": "verse_2 begins"},
+    {"start": 180.8, "end": 183.0, "direction": "front_to_back", "cue": "chorus_2: On the other side"},
+    {"start": 190.0, "end": 191.6, "direction": "back_to_front", "cue": "bridge begins"},
+    {"start": 237.6, "end": 240.5, "direction": "front_to_back", "cue": "final chorus: On the other side"},
+    {"start": 258.3, "end": 260.8, "direction": "back_to_front", "cue": "final light returns for outro"}
+  ]
+}
