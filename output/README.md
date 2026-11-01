@@ -1,5 +1,8 @@
-# Output and privacy
+# Output — Artilect receipts and privacy
 
-The committed `silent-other-side.mp4` is the 12-second audio-free public visual preview (procedural art and original lyrics only). `front.png` and `back.png` are film concept stills.
+- `silent-other-side-small.mp4` — **committed** 12-second audio-free public concept video. Encoded from original procedural Pillow artwork using FFmpeg. A larger local render, `silent-other-side.mp4`, also exists in the producer's working copy, but the public source uses the compact version.
+- `front.webp` and `back.webp` — **committed** source-art preview stills, optimized for GitHub.
+- `nobody-background-silent.mp4` — locally rendered **full-length (4:23) SILENT custom video background** for UseSuno MV Studio. Not committed because large exports are kept out of Git.
+- `private-full-visuals-with-audio.mp4` — locally rendered review cut with the creator's Suno track but **no karaoke**. Kept private until music-publication rights have been checked.
 
-The creator-provided WAV, the full soundtrack-containing `full-draft.mp4`, and the audio-containing local test `other-side-preview.mp4` are **not committed or meant for public GitHub history** until their distribution rights have been confirmed. They may remain locally in this working directory, which is why `*.wav` and `*.mp4` are ignored by default (the silent preview is force-added).
+Karaoke is **not complete**: the old estimated lyric timestamps are not sync evidence. The final production must use ELYSY-aligned, manually reviewed Enhanced LRC and be exported from UseSuno MV Studio. These tools are credited but have not been executed in this environment.
