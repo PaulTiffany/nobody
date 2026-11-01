@@ -1,0 +1,400 @@
+{
+  "status": "PROVISIONAL: composition and approximate section boundaries inferred from audio structure; not a vocal transcription or verified per-word synchronization.",
+  "audio_duration_seconds": 263.24,
+  "how_to_correct": "Audition each lyric against the original WAV, edit start/end to the sung onset/offset. A line wipe is an approximate visual progress indicator until that human verification is complete.",
+  "creative_direction": "First encounter: front of glowing toy. At ~95 s pass through acrylic into a little party. Return from the reverse to a connected world during final chorus. End with the last isolated peg lighting up.",
+  "sections": [
+    {
+      "name": "INTRO",
+      "start": 0,
+      "end": 14
+    },
+    {
+      "name": "VERSE 1",
+      "start": 14,
+      "end": 48
+    },
+    {
+      "name": "PRE-CHORUS 1",
+      "start": 48,
+      "end": 70
+    },
+    {
+      "name": "CHORUS 1",
+      "start": 70,
+      "end": 95
+    },
+    {
+      "name": "INSTRUMENTAL / OTHER SIDE",
+      "start": 95,
+      "end": 110
+    },
+    {
+      "name": "VERSE 2",
+      "start": 110,
+      "end": 144
+    },
+    {
+      "name": "PRE-CHORUS 2",
+      "start": 144,
+      "end": 160
+    },
+    {
+      "name": "CHORUS 2",
+      "start": 160,
+      "end": 183
+    },
+    {
+      "name": "INSTRUMENTAL",
+      "start": 183,
+      "end": 191
+    },
+    {
+      "name": "BRIDGE",
+      "start": 191,
+      "end": 210
+    },
+    {
+      "name": "FINAL CHORUS",
+      "start": 210,
+      "end": 241
+    },
+    {
+      "name": "OUTRO",
+      "start": 241,
+      "end": 263.24
+    }
+  ],
+  "cues": [
+    {
+      "start": 15.0,
+      "end": 18.639,
+      "text": "It's 2 AM, the city glows",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 18.639,
+      "end": 22.396,
+      "text": "A thousand warnings on my phone",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 22.396,
+      "end": 26.133,
+      "text": "Somebody says we ought to stop",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 26.133,
+      "end": 29.91,
+      "text": "Somebody says we're too far gone",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 29.91,
+      "end": 34.152,
+      "text": "And you ask me what I believe",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 34.152,
+      "end": 38.552,
+      "text": "While rain is running down the street",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 38.552,
+      "end": 42.833,
+      "text": "I don't know how the story ends",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 42.833,
+      "end": 47.6,
+      "text": "But I know who I want with me",
+      "section": "VERSE 1"
+    },
+    {
+      "start": 48.25,
+      "end": 53.462,
+      "text": "If there's a switch, who's holding on?",
+      "section": "PRE-CHORUS 1"
+    },
+    {
+      "start": 53.462,
+      "end": 59.269,
+      "text": "If there's a door, who holds the key?",
+      "section": "PRE-CHORUS 1"
+    },
+    {
+      "start": 59.269,
+      "end": 63.862,
+      "text": "And if we're building something bigger",
+      "section": "PRE-CHORUS 1"
+    },
+    {
+      "start": 63.862,
+      "end": 69.6,
+      "text": "Will there be room for you and me?",
+      "section": "PRE-CHORUS 1"
+    },
+    {
+      "start": 70.5,
+      "end": 72.616,
+      "text": "Nobody owns tomorrow",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 72.616,
+      "end": 75.008,
+      "text": "Nobody owns the sky",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 75.008,
+      "end": 79.21,
+      "text": "We're just trying to find a reason",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 79.21,
+      "end": 82.884,
+      "text": "To keep these little lights alive",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 82.884,
+      "end": 86.502,
+      "text": "And if the whole world changes",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 86.502,
+      "end": 88.99,
+      "text": "Before the morning light",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 88.99,
+      "end": 92.645,
+      "text": "Leave a little room for everyone",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 92.645,
+      "end": 95.0,
+      "text": "On the other side",
+      "section": "CHORUS 1"
+    },
+    {
+      "start": 110.8,
+      "end": 114.827,
+      "text": "Another promise on a screen",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 114.827,
+      "end": 117.618,
+      "text": "Another beautiful machine",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 117.618,
+      "end": 122.416,
+      "text": "Another voice that tells us why",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 122.416,
+      "end": 127.038,
+      "text": "We have to choose a side",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 127.038,
+      "end": 131.241,
+      "text": "But somewhere underneath the noise",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 131.241,
+      "end": 135.319,
+      "text": "A million little human voices",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 135.319,
+      "end": 140.167,
+      "text": "Are singing something out of tune",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 140.167,
+      "end": 143.6,
+      "text": "And making something beautiful",
+      "section": "VERSE 2"
+    },
+    {
+      "start": 144.25,
+      "end": 147.997,
+      "text": "If there's a switch, who's holding on?",
+      "section": "PRE-CHORUS 2"
+    },
+    {
+      "start": 147.997,
+      "end": 152.172,
+      "text": "If there's a door, who holds the key?",
+      "section": "PRE-CHORUS 2"
+    },
+    {
+      "start": 152.172,
+      "end": 155.475,
+      "text": "And if we're building something bigger",
+      "section": "PRE-CHORUS 2"
+    },
+    {
+      "start": 155.475,
+      "end": 159.6,
+      "text": "Will there be room for you and me?",
+      "section": "PRE-CHORUS 2"
+    },
+    {
+      "start": 160.5,
+      "end": 162.443,
+      "text": "Nobody owns tomorrow",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 162.443,
+      "end": 164.64,
+      "text": "Nobody owns the sky",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 164.64,
+      "end": 168.499,
+      "text": "We're just trying to find a reason",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 168.499,
+      "end": 171.873,
+      "text": "To keep these little lights alive",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 171.873,
+      "end": 175.196,
+      "text": "And if the whole world changes",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 175.196,
+      "end": 177.48,
+      "text": "Before the morning light",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 177.48,
+      "end": 180.838,
+      "text": "Leave a little room for everyone",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 180.838,
+      "end": 183.0,
+      "text": "On the other side",
+      "section": "CHORUS 2"
+    },
+    {
+      "start": 191.25,
+      "end": 194.97,
+      "text": "Maybe we're afraid of falling",
+      "section": "BRIDGE"
+    },
+    {
+      "start": 194.97,
+      "end": 198.599,
+      "text": "Maybe we're afraid to fly",
+      "section": "BRIDGE"
+    },
+    {
+      "start": 198.599,
+      "end": 201.525,
+      "text": "Maybe all the answers",
+      "section": "BRIDGE"
+    },
+    {
+      "start": 201.525,
+      "end": 205.268,
+      "text": "Are just questions in disguise",
+      "section": "BRIDGE"
+    },
+    {
+      "start": 205.268,
+      "end": 209.6,
+      "text": "But I can hear you calling...",
+      "section": "BRIDGE"
+    },
+    {
+      "start": 210.8,
+      "end": 213.365,
+      "text": "Nobody owns tomorrow",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 213.365,
+      "end": 216.265,
+      "text": "Nobody owns the sky",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 216.265,
+      "end": 221.358,
+      "text": "We're just trying to find a reason",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 221.358,
+      "end": 225.813,
+      "text": "To keep these little lights alive",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 225.813,
+      "end": 230.198,
+      "text": "And if the whole world changes",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 230.198,
+      "end": 233.214,
+      "text": "Before the morning light",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 233.214,
+      "end": 237.646,
+      "text": "Leave a little room for everyone",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 237.646,
+      "end": 240.5,
+      "text": "On the other side",
+      "section": "FINAL CHORUS"
+    },
+    {
+      "start": 243.5,
+      "end": 251.352,
+      "text": "On the other side...",
+      "section": "OUTRO"
+    },
+    {
+      "start": 251.352,
+      "end": 258.24,
+      "text": "Nobody owns tomorrow...",
+      "section": "OUTRO"
+    }
+  ]
+}

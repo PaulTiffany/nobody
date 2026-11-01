@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "title": "Nobody Owns Tomorrow \u2014 The Other Side (upstream-first visual prototype)",
+  "summary": "Glowing pegboard travels into a secret miniature rave; word-level karaoke will use upstream ELYSY and UseSuno MV Studio.",
+  "media_url": "",
+  "media_path": "output/silent-other-side-small.mp4",
+  "media_type": "video",
+  "reproduce": "See production/README.md; you need your own rights-cleared WAV of the song",
+  "rights_notes": "Public example is a silent original visual excerpt only. Private full-cut includes creator-provided Suno music; publication/commercial rights are not verified. Original code/visuals; Pillow MIT-CMU and FFmpeg LGPL/GPL remain separately licensed."
+}
