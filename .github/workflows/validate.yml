@@ -20,3 +20,4 @@ jobs:
           python scripts/validate.py
           python scripts/check_scene_cues.py
           python scripts/test_derive_scene_cues.py
+          python scripts/test_scene_state.py

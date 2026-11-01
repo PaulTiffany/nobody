@@ -81,8 +81,10 @@ def draw_refracted_overlay(img,t,energy,origin=(480,255),vivid=False):
     return Image.alpha_composite(im,overlay).convert('RGB')
 
 
-def side_at(t, transitions=TRANSITIONS):
+def side_at(t, transitions=None):
     """The user-directed stage choreography: each return to a verse faces front."""
+    if transitions is None:
+        transitions = TRANSITIONS
     side='front'
     for event in transitions:
         if t < event['start']: return side
