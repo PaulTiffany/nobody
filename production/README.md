@@ -11,11 +11,23 @@ This is an **Artilect production**, not a new karaoke application. Make a film u
 - `output/scene-flips-preview.mp4`: small **public** silent excerpt showing the front → rave → front cycle.
 - `production/scene_cues.storyboard.json`: **obsolete guesses for reference only**. The real `production/scene_cues.json` is deliberately absent until vocal alignment is available.
 
-## 1. Sync the real vocals with ELYSY (upstream)
+## Fast lane — make one **real** short video before installing alignment models
+
+**Do this first.** The existing UseSuno MV Studio editor can time words manually and export a selected video range without a paid inference service. The staged fast lane uses the **same existing upstream submodule**, not a new production stack.
+
+1. On the producer's computer, open [UseSuno MV Studio](https://mv.usesuno.com/) (or the locally pinned source under `technologies/UseSunoMVStudio`). Import the creator's local WAV and the actual sung lyrics. Use the editor's word-timing workspace: tap the words against the playing audio, audition and nudge any errors. If a trustworthy LRC exists for the *exact* audio take, import it first. Don't trust estimated word reveals.
+2. Time a **20–30 second excerpt containing “on the other side”**. Confirm the word starts by listening, then choose an existing still backdrop, or import the silent front/reverse preview into the Studio's Custom media **video background**. Any old visual crossing remains a **storyboard guess**, not synchronized to the lyric. This first proof tests audible word alignment and the editor's real export with **no ELYSY installation required**.
+3. Export that selected range (720p is acceptable for the proof) and **watch and listen** to the actual MP4/WebM; check the lyric onset, the crossing shot, the audio and readable titles. Save the editor's portable `.lyricmv` project and its word-timed LRC if available. If browser recording/export fails, report the exact browser/codec issue; don't label the preview a delivered video.
+4. For the *final* six scene transitions, export a **reviewed Enhanced LRC** containing explicit word timestamps (not just line timestamps), then run the existing `scripts/derive_scene_cues.py --lrc <file> --wav <exact-wav>`. Audition the candidate events and deliberately promote the reviewed cues before rerendering the full silent background. Do not use `scene_cues.storyboard.json` as verified timing.
+5. Only after one exported short works, decide whether full-song timing is better completed in the Studio manually or via ELYSY. The automatic lane below remains available, but isn't a launch prerequisite.
+
+**Acceptance gate 1 (working video):** A real lyric-video short export, visually inspected and audibly checked against the source WAV, with reviewed word timestamps for `on the other side`. An LRC that merely parses, a synthetic test and a silent clip don't satisfy this gate. **Acceptance gate 2 (correct choreography):** Promote all six source-aligned scene cues after full-song review, rerender the full-length silent backing and verify that the *crossing shot* occurs on the actual sung phrase. Do not report gate 2 complete from the old storyboard clip. No publishing without the creator's permission.
+
+## 1. Optional automatic alignment with ELYSY (upstream)
 
 Source: `technologies/ELYSY` → https://github.com/gabrielxcom/elysy . It uses Demucs + WhisperX, is MIT licensed, and has a web-based correction editor. First install the upstream project's prerequisites **using its README** (recommended Python 3.11/3.12, model downloads and FFmpeg; CPU also works). Running installers downloads code/models and must be your own informed choice. No API keys required by the advertised local workflow.
 
-Open ELYSY on `http://127.0.0.1:8765`, load the WAV and the lyrics, run Auto-Align, and **listen to every line**. Correct the text and word timing. Export **Enhanced LRC (word-level)** to a local `nobody.enhanced.lrc`. DO NOT use the old estimated `lyrics_draft.json` for karaoke. ELYSY uses a nontrivial external model download; this step has **not yet been run** in the current sandbox.
+If choosing the automatic lane, open ELYSY on `http://127.0.0.1:8765`, load the WAV and the lyrics, run Auto-Align, and **listen to every line**. Correct the text and word timing. Export **Enhanced LRC (word-level)** to a local `nobody.enhanced.lrc`. DO NOT use the old estimated `lyrics_draft.json` for karaoke. ELYSY uses a nontrivial external model download; this step has **not yet been run** in the current sandbox.
 
 ## 2. Design and export in UseSuno MV Studio (upstream)
 
@@ -27,7 +39,7 @@ npm ci
 npm run dev
 ```
 
-In your browser: import the WAV, import `nobody.enhanced.lrc`, choose **Custom media → video background**, and select the full-length **silent** backdrop or a shorter test clip. Preview a chorus and the pass-through-to-rave transition. Tune text contrast, positioning and timing in its editor. Export a 15–30 second range **first**; inspect audio sync and readability. Export the full song only after that succeeds. Browser codec support and permissions vary; the upstream provides a real-time recording fallback. **No exported MV Studio video has been verified in this sandbox yet.**
+In your browser: import the WAV and your **reviewed** word-timed `nobody.enhanced.lrc` (whether from ELYSY or another explicitly verified source), choose **Custom media → video background**, and select the full-length **silent** backdrop or a shorter test clip. Preview a chorus and the pass-through-to-rave transition. Tune text contrast, positioning and timing in its editor. Export a 15–30 second range **first**; inspect audio sync and readability. Export the full song only after that succeeds. Browser codec support and permissions vary; the upstream provides a real-time recording fallback. **No exported MV Studio video has been verified in this sandbox yet.**
 
 ### Compatibility status
 
