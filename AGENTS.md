@@ -1,17 +1,9 @@
-# Nobody — Artilect producer instructions
+# Nobody — production instructions (V6)
 
-This repository follows the canonical instructions of https://github.com/PaulTiffany/artilect/tree/submission-template (the `AGENTS.md` and `SKILL.md` contract). **This is a creative production, not a new platform.**
+This is a single creative production under [Artilect](https://github.com/PaulTiffany/artilect), not a new platform. The current V6 source lives under `production/music_video_v6/`. Read that README before editing and preserve the earlier project's source and the **four direct upstream Git submodules** and `.gitmodules` pins exactly.
 
-Read `production/README.md` first. Use existing credited upstream technology. The four original projects are direct pinned submodules: ELYSY, UseSunoMVStudio, Pillow and FFmpeg. Preserve each original upstream Gitlink and `.gitmodules` URL. Do not vendor them, silently swap them, or claim source was installed simply because it's present as a Git submodule.
+Creative brief: an original pop song is presented through a dreaming boy's Night-Brite toy; its lit pegs contain a whimsical miniature rave. Keep on-toy chorus karaoke legible, orbit flat sprites with a 3D projected camera, anchor room sprites physically to the bedroom, and finish with a city of other dreaming children. Preserve user-directed music-sensitive transitions; the 3:09.5 eye surprise is the intentionally discontinuous shot.
 
-Creative goal: the front of a luminous pegboard shows a melancholy city. Each time the chorus sings “on the other side,” push through a light peg to a jubilant parallax miniature rave. Return to the front for verses and the quiet bridge. The end returns to a single illuminated peg. The lyrics should be gracefully synchronized in front of the art, not baked into an incorrectly timed programmatic sweep.
+Ground decisions in the supplied Suno word-alignment JSON and director cues; Suno word alignment is best-effort, not independently listening-certified. Maintain provenance to the original [panel discussion](https://www.youtube.com/watch?v=NXITvkHIV9o), with **clearly distinguished direct source timestamps, observations and artistic interpretations**. Don't add intrusive editorial labels or borrowed footage. Don't present guest interpretations as endorsements.
 
-Workflow:
-1. Use creator's properly licensed WAV privately; use `production/lyrics/Nobody-Owns-Tomorrow.txt` as source words, **correct them against what the song actually sings**.
-2. Use upstream ELYSY for alignment, inspect results by listening and export **Enhanced LRC**. Never invent timing or claim alignment merely because a JSON or .lrc file parses.
-3. Use upstream UseSuno MV Studio to import the audio, enhanced LRC, and our **silent** background film; produce a genuine rendered karaoke video and check the output. Don't build a competing timing UI or karaoke renderer.
-4. Pillow/FFmpeg are the actual tools for the visual artwork. Run `production/render_storyboard.sh` and review the six scene switches in `production/scene_cues.json`. Existing legacy karaoke modes are deprecated for this project.
-5. Document actual commands, pinned source versions, licenses, rights, external model/binary dependencies, failures and real media receipts. Keep videos/music out of Git unless explicitly approved. Run `python scripts/validate.py`.
-6. Do not falsely declare completed production. A human controls artistic decisions, licensing and Artilect showcase submission; get approval for publishing the finished audio/movie.
-
-Do not execute unreviewed upstream installer scripts without informed consent. Keep any secret tokens or model weights out of Git. MIT licenses do not cancel the AGPL terms of MV Studio, and model/media rights remain independent of software licenses.
+Use creator-provided rights-cleared media; do not commit credentials, weights, or third-party media without rights. **Current V6 did NOT run ELYSY or UseSuno MV Studio**, although they remain pinned legacy/submitted-upstream options. Actual V6 execution: Pillow, NumPy, FFmpeg, and previously obtained Suno timing. Keep these provenance distinctions clear. Preserve versions, licenses and receipts; run `python scripts/validate.py` whenever possible. The complete V6 video is preserved as integrity-checked binary chunks in `output/v6-media/`; the standalone original WAV is not tracked. Do not add further unverified third-party media. Publishing to YouTube requires separate explicit approval.

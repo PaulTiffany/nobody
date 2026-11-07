@@ -1,0 +1,301 @@
+{
+  "title": "Nobody Owns Tomorrow \u2014 music-directed V4",
+  "duration_s": 263.24,
+  "direction_version": "v6-music-video-with-interview-provenance",
+  "timing_provenance": "Suno word alignment, musical beats and user-directed cue corrections; word alignment has not been independently checked by ear",
+  "first_intentional_hard_cut_at_s": 190.147,
+  "no_diegetic_editorial_markers": true,
+  "vocal_gaps_in_chorus_hold_same_board": true,
+  "postchorus_fly_camera_starts_s": [
+    83.195,
+    160.968,
+    219.0
+  ],
+  "source_audio": "Nobody Owns Tomorrow(1).wav",
+  "shots": [
+    {
+      "id": "00",
+      "display_start": "00:00",
+      "display_end": "0:15",
+      "scene": "bedtime",
+      "start_s": 0,
+      "end_s": 15,
+      "direction": "Child at bedtime; established room, gentle light"
+    },
+    {
+      "id": "01",
+      "display_start": "0:15",
+      "display_end": "0:25.09",
+      "scene": "push",
+      "start_s": 15,
+      "end_s": 25.09,
+      "direction": "Physical camera discovers same toy; no discontinuity"
+    },
+    {
+      "id": "02",
+      "display_start": "0:25.09",
+      "display_end": "0:54.25",
+      "scene": "verse_icons",
+      "start_s": 25.09,
+      "end_s": 54.25,
+      "direction": "Verse one pictograms on Night-Brite"
+    },
+    {
+      "id": "03",
+      "display_start": "0:54.25",
+      "display_end": "1:11.61",
+      "scene": "chorus",
+      "start_s": 54.25,
+      "end_s": 71.614,
+      "direction": "Karaoke words; gaps retain board, never city cutaway"
+    },
+    {
+      "id": "04",
+      "display_start": "1:11.61",
+      "display_end": "1:13.27",
+      "scene": "portal",
+      "start_s": 71.614,
+      "end_s": 73.274,
+      "direction": "First ON THE OTHER SIDE becomes doorway"
+    },
+    {
+      "id": "05",
+      "display_start": "1:13.27",
+      "display_end": "1:23.20",
+      "scene": "rave_wide",
+      "start_s": 73.274,
+      "end_s": 83.195,
+      "direction": "Tour of actual toy-circuit party"
+    },
+    {
+      "id": "06",
+      "display_start": "1:23.20",
+      "display_end": "1:32.78",
+      "scene": "rave_fly",
+      "start_s": 83.195,
+      "end_s": 92.785,
+      "direction": "Projected orbit-dolly through flattened dancing 2-D sprites in a 3-D toy-circuit room; occlusion, foreground parallax, changing perspective."
+    },
+    {
+      "id": "07",
+      "display_start": "1:32.78",
+      "display_end": "1:38",
+      "scene": "dream_out",
+      "start_s": 92.785,
+      "end_s": 98.0,
+      "direction": "Finish reprise; emerge from boy dream, pull back to bedroom"
+    },
+    {
+      "id": "08",
+      "display_start": "1:38",
+      "display_end": "1:42.90",
+      "scene": "room_push",
+      "start_s": 98.0,
+      "end_s": 102.903,
+      "direction": "Continue into Night-Brite for verse two"
+    },
+    {
+      "id": "09",
+      "display_start": "1:42.90",
+      "display_end": "2:12.02",
+      "scene": "verse_icons",
+      "start_s": 102.903,
+      "end_s": 132.02,
+      "direction": "Verse two illustrated with diegetic lights"
+    },
+    {
+      "id": "10",
+      "display_start": "2:12.02",
+      "display_end": "2:29.37",
+      "scene": "chorus",
+      "start_s": 132.02,
+      "end_s": 149.374,
+      "direction": "Chorus karaoke; stable scene through vocal gaps"
+    },
+    {
+      "id": "11",
+      "display_start": "2:29.37",
+      "display_end": "2:31.09",
+      "scene": "portal",
+      "start_s": 149.374,
+      "end_s": 151.094,
+      "direction": "Enter second circuit-board party"
+    },
+    {
+      "id": "12",
+      "display_start": "2:31.09",
+      "display_end": "2:40.97",
+      "scene": "rave_wide",
+      "start_s": 151.094,
+      "end_s": 160.968,
+      "direction": "Second cute miniature disco"
+    },
+    {
+      "id": "13",
+      "display_start": "2:40.97",
+      "display_end": "2:50.99",
+      "scene": "rave_fly",
+      "start_s": 160.968,
+      "end_s": 170.991,
+      "direction": "Projected orbit-dolly through flattened dancing 2-D sprites in a 3-D toy-circuit room; occlusion, foreground parallax, changing perspective."
+    },
+    {
+      "id": "14",
+      "display_start": "2:50.99",
+      "display_end": "2:52.65",
+      "scene": "exit_to_front",
+      "start_s": 170.991,
+      "end_s": 172.65,
+      "direction": "Zoop back to front of board, not boy"
+    },
+    {
+      "id": "15",
+      "display_start": "2:52.65",
+      "display_end": "3:00",
+      "scene": "bridge_icons",
+      "start_s": 172.65,
+      "end_s": 180.0,
+      "direction": "First half bridge: animatable pictograms"
+    },
+    {
+      "id": "16",
+      "display_start": "3:00",
+      "display_end": "3:09.5",
+      "scene": "bridge_boy",
+      "start_s": 180.0,
+      "end_s": 189.5,
+      "direction": "Back away from board into boy dream"
+    },
+    {
+      "id": "17",
+      "display_start": "3:09.5",
+      "display_end": "3:10.147",
+      "scene": "eyes_open",
+      "start_s": 189.5,
+      "end_s": 190.147,
+      "direction": "Child opens eyes on drum pickup"
+    },
+    {
+      "id": "18",
+      "display_start": "3:10.147",
+      "display_end": "3:27.79",
+      "scene": "chorus",
+      "start_s": 190.147,
+      "end_s": 207.788,
+      "direction": "First intentional hard cut to final karaoke chorus"
+    },
+    {
+      "id": "19",
+      "display_start": "3:27.79",
+      "display_end": "3:29.80",
+      "scene": "portal",
+      "start_s": 207.788,
+      "end_s": 209.797,
+      "direction": "Final ON THE OTHER SIDE; child enters dream party"
+    },
+    {
+      "id": "20",
+      "display_start": "3:29.80",
+      "display_end": "3:39",
+      "scene": "rave_kid",
+      "start_s": 209.797,
+      "end_s": 219.0,
+      "direction": "Boy dances among the tiny peg sprites"
+    },
+    {
+      "id": "21",
+      "display_start": "3:39",
+      "display_end": "3:45.8",
+      "scene": "rave_fly_kid",
+      "start_s": 219.0,
+      "end_s": 225.8,
+      "direction": "Projected orbit-dolly through flattened dancing 2-D sprites in a 3-D toy-circuit room; occlusion, foreground parallax, changing perspective."
+    },
+    {
+      "id": "22",
+      "display_start": "3:45.8",
+      "display_end": "3:49",
+      "scene": "kid_to_room",
+      "start_s": 225.8,
+      "end_s": 229.0,
+      "direction": "Float out of dreaming boy to his bedroom"
+    },
+    {
+      "id": "23",
+      "display_start": "3:49",
+      "display_end": "3:59",
+      "scene": "room_sprite_party",
+      "start_s": 229.0,
+      "end_s": 239.0,
+      "direction": "82+ dancing light sprites illuminate the bedroom while the sleeping boy remains eyes shut."
+    },
+    {
+      "id": "24",
+      "display_start": "3:59",
+      "display_end": "4:08",
+      "scene": "windows",
+      "start_s": 239.0,
+      "end_s": 248.0,
+      "direction": "Many windows activate non-sequentially with changing colors and independent dance-flashing."
+    },
+    {
+      "id": "25",
+      "display_start": "4:08",
+      "display_end": "4:12.20",
+      "scene": "window_push",
+      "start_s": 248.0,
+      "end_s": 252.2,
+      "direction": "Camera heads toward bedroom window"
+    },
+    {
+      "id": "26",
+      "display_start": "4:12.20",
+      "display_end": "4:23.24",
+      "scene": "other_dreamers",
+      "start_s": 252.2,
+      "end_s": 263.24,
+      "direction": "Other children dreaming with their own lightboards"
+    }
+  ],
+  "changes": {
+    "camera": "Perspective-project real 3-D world geometry and 2-D sprite puppets in three musical trills. Orbit and dolly (not screen shake/pan); world-space foreshortening and depth sorting.",
+    "camera_windows_s": [
+      [
+        83.195,
+        92.785
+      ],
+      [
+        160.968,
+        170.991
+      ],
+      [
+        219,
+        225.8
+      ]
+    ],
+    "boy": "Eyes open only on brief dream shock at 189.5\u2013190.147; eyes shut for room return and finale.",
+    "bedroom_sprites": 86,
+    "chorus_karaoke_advance_s": 0.32,
+    "window_lighting": "non-sequential, independently flickering, changing Night-Brite hues",
+    "chorus": "subtle physical peg gestures and no city flash cutaways",
+    "media_rights": "private local review only; no publication"
+  },
+  "camera_principle": "World-to-camera transforms, not screen-space overlays",
+  "v5_corrections": {
+    "first_push": "Same lens trajectory through 25.09; 0.8s peg icon fade and 0.05 continuing push",
+    "rave": "One projected 3D stage all through each rave; yaw+zoom with zero velocity at each start/end; dissolve from 2D portal while camera holds",
+    "room": "All 86 sprites world-locked before camera crop, same sleeping-bedroom plate during final exit, room party, window lighting and pan",
+    "last_city": "First outside-dreamer frame matches final bedroom-window camera, cross-dissolve instead of discontinuous cut",
+    "unchanged": "Suno lyrics, timed beats, narrative, final 190.147 intentional hard cut, user-directed 1:33/2:51/3:09/3:29/3:49/4:08 choreography"
+  },
+  "interview_source": "https://www.youtube.com/watch?v=NXITvkHIV9o",
+  "release_status": "rendered for review, NOT uploaded or published",
+  "v6_corrections": {
+    "inside_rave": "Only one projected 3D rave world and 3D camera for wide, fly and exit; no flat inside_frame() rendering",
+    "portal": "Physical Night-Brite word magnification and radial iris to same 3D world; no legacy flat inside",
+    "lens_pushes": "Single 5x room texture with toy master mapped to physical location; single-camera crop, no double casing image blend",
+    "room_sprites": "Keep fixed room coordinates but shuffle sprite palette separately from five placement bands",
+    "source": "Provenance links in upload description, pinned comment, and OPTIONAL card; no editorial titles burnt into video",
+    "song": "Unchanged: Suno alignments, original user-supplied sound, narrative cuts, bridge etc."
+  }
+}

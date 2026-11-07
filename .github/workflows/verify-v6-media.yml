@@ -1,0 +1,25 @@
+name: Verify Nobody V6 Media
+on:
+  push:
+    paths:
+      - 'output/v6-media/**'
+      - '.github/workflows/verify-v6-media.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reassemble and hash-check both V6 MP4s
+        run: python output/v6-media/reassemble.py
+      - name: Source syntax check
+        run: python -m compileall -q production/music_video_v6
+      - name: Upload reconstructed watchable movies
+        uses: actions/upload-artifact@v4
+        with:
+          name: nobody-v6-music-videos
+          path: output/v6-media/rendered/*.mp4
+          if-no-files-found: error
+          retention-days: 30

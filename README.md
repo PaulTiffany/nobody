@@ -1,45 +1,29 @@
-# Nobody Owns Tomorrow — The Other Side
+# Nobody Owns Tomorrow — The Other Side 🎬🎶
 
-**There's a whole party on the other side of the lightboard.** 🎶✨
+**A miniature disco inside a glowing Night-Brite.** A boy falls asleep while the tiny characters begin dancing through the dream, the bedroom, and finally a whole city of other dreaming children.
 
-[**Watch the front → rave → front scene test (silent)**](output/scene-flips-preview.mp4) · [Front](output/front.webp) · [Reverse: the rave](output/back.webp)
+![V6 camera and storyboard](production/music_video_v6/storyboard_v6_web.jpg)
 
-![Glowing lightboard city](output/front.webp)
+## Latest production: V6
 
-The song starts with a lonely, glowing pegboard city. On *“on the other side,”* we travel through a peg to a jubilant miniature rave. **When the next verse begins, we return to the front.** This repeats: front for the vocal storytelling, behind the board for each *other side* refrain and instrumental dance break. The final shot comes back to one isolated light. The planned karaoke is layered later with upstream tools, not faked with estimated word timing.
+We have rendered a 4:23 music video with the original song and synchronized on-toy karaoke. V6 includes 3D-perspective camera orbits around flat dancers, world-anchored sprites, organic neighboring window lighting, continuity repairs, and the intentionally surprising eye-opening on the final chorus downbeat. **This is a cinematic 2.5D animatic, not photorealistic video.**
 
-This is for [**Artilect**](https://github.com/PaulTiffany/artilect): bring the subs, drop the stack, pass the mic, all glory upstream. **Nobody is a production recipe and an art project, not a new karaoke app.**
+- [**V6 production source, scene cues and reproduction notes**](production/music_video_v6/README.md)
+- [**Storyboard**](production/music_video_v6/storyboard_v6_web.jpg)
+- [**Artist-selected source-interview timestamps**](production/music_video_v6/Nobody_V6_Deep_Links.csv)
+- [**YouTube description draft**](production/music_video_v6/YOUTUBE_PASTE_DESCRIPTION.txt)
+- [**Suno word timing**](production/music_video_v6/nobody_suno_word_alignment.json) — model-generated, not independently ear-verified.
 
-## The upstream cypher
+**Watch the V6 music video:** The *complete* H.264/AAC master and compact encodes are stored as verified binary chunks in [output/v6-media](output/v6-media/README.md). Run `python output/v6-media/reassemble.py` after cloning, or download the assembled GitHub Actions artifact. The separate original WAV is not tracked. A YouTube link is coming after the creator publishes. Do not confuse the [early silent scene-flips preview](output/scene-flips-preview.mp4) with V6.
 
-| Original upstream project | Original creators / license | Actual role and status |
-|---|---|---|
-| [Pillow](https://github.com/python-pillow/Pillow) | Jeffrey A. Clark, Fredrik Lundh, PIL/Secret Labs AB, contributors / MIT-CMU | **Used** to render front, reverse, transition, moving backgrounds |
-| [FFmpeg](https://github.com/FFmpeg/FFmpeg) | FFmpeg contributors / LGPL-2.1+ default; some distributions GPL-enabled | **Used** to encode actual prototype media |
-| [ELYSY](https://github.com/gabrielxcom/elysy) | Gabriel X / Eliz's LRC Generator contributors / MIT | **Selected, not yet executed**: Demucs + WhisperX vocal alignment → reviewed word-level Enhanced LRC |
-| [UseSuno MV Studio](https://github.com/UseSuno/UseSunoMVStudio) | UseSuno contributors / AGPL-3.0-only | **Selected, not yet executed**: animated karaoke, custom video backgrounds, final export |
+## A musical response, with receipts
 
-All four are **direct Git submodules** under `technologies/`, pinned to exact original upstream commits (not forks or copied vendor trees). `git submodule update --init --recursive` retrieves the source, but does not install models, binaries or dependencies. Source-compatibility of ELYSY Enhanced LRC with MV Studio's parser has been inspected; the actual handoff still needs an end-to-end test.
+Inspired by [**The Beyond Tomorrow Podcast — AI Experts Reveal: It’s Too Late!**](https://www.youtube.com/watch?v=NXITvkHIV9o) (2026-10-30). The song is an independent creative interpretation exploring agency, uncertainty, and shared futures, not a quotation, a speaker endorsement, or a summary of all panel views. Source deep links are preserved in the V6 folder and in the planned YouTube description.
 
-## Make / remix the film
+## Artilect: all glory upstream
 
-Read [**production/README.md**](production/README.md) for the actual production steps. Briefly: align the real WAV and written lyrics in **ELYSY**; review them by ear; export Enhanced LRC; import LRC, sound, and our silent parallax video into **UseSuno MV Studio**; style and export the karaoke film. **The written lyrics are available** in [`production/lyrics/Nobody-Owns-Tomorrow.txt`](production/lyrics/Nobody-Owns-Tomorrow.txt).
+This is a creative production, not a new media platform. The **actual executed** toolchain for the current V6 rendering is Suno's word-timing analysis (connected integration, data included), **Pillow**, **NumPy**, and **FFmpeg**. The existing original pinned direct submodules remain unchanged: [Pillow](https://github.com/python-pillow/Pillow) (MIT-CMU), [FFmpeg](https://github.com/FFmpeg/FFmpeg) (LGPL/GPL depending on build), [ELYSY](https://github.com/gabrielxcom/elysy) (MIT; prior proposed alignment route, **not executed in V6**), [UseSuno MV Studio](https://github.com/UseSuno/UseSunoMVStudio) (AGPL-3.0-only; prior proposed karaoke route, **not executed in V6**). The current rendered V6 visual-lyric track is **custom Pillow code**, not an upstream MV Studio export. See [production notes](production/music_video_v6/README.md).
 
-The visuals are reproducible with the time-indexed Pillow artwork in `production/film.py` and the **six reversible pegboard crossings in `production/scene_cues.storyboard.json`**. Run `bash production/render_storyboard.sh /path/to/song.wav` to reproduce the current full-length visual cut; karaoke stays off and will be supplied by ELYSY + MV Studio. The marked crossing times are creator-directed storyboard estimates, **not verified vocal alignment**. The rejected earlier hand-made lyric timer and its unreliable timestamps are not part of this new upstream-first pathway.
-
-## Finished vs unfinished
-
-- **Made and verified:** an actual 4:23 audio-backed visual draft, a separate 4:23 silent background for MV Studio, a short public *front → back → front* scene test, plus the original art and source recipe. The full soundtrack cut is local/private, not in public Git.
-- **Not yet claimed:** accurate vocal timing, a real ELYSY alignment receipt, a UseSuno MV Studio export, or a completed Artilect showcase submission. No fabricated “karaoke passing” receipt.
-- **Rights:** Suno recording provided privately by the song's creator. Recording and large full film intentionally excluded from Git; verify distribution rights before publishing audio. Original visual artwork is ours; the toy imagery is not an official Lite-Brite collaboration.
-
-## Artilect
-
-When the **finished** movie has been reviewed and media permissions checked, run `python scripts/validate.py` and [drop the production repo](https://github.com/PaulTiffany/artilect/issues/new?template=stack.yml). Each upstream project retains its license. Creative choices, publishing and attribution belong to the producer.
+Past prototype recipe and CI validator remain in `production/`, `scripts/`, and `output/`. The V6 MP4 is preserved as byte-exact chunks in this public repository, but has **not been published on YouTube**. Source audio rights, Suno subscription entitlement, and YouTube AI-use disclosure are subject to the creator's approval.
 
 **Nobody owns tomorrow. Nobody owns the sky.**
-
-
-### Alignment gate (November 1, 2026)
-
-The visual crossings published so far were **not synchronized with the actual singing**. They are **not the finished music video**. We will not guess more timecodes: the real `production/scene_cues.json` has intentionally been withheld. `scripts/derive_scene_cues.py` turns ELYSY **Enhanced LRC word timing** into front/reverse scene cues, requiring a listening review before they may be used as live cuts. See `production/README.md`.

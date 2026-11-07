@@ -1,0 +1,2030 @@
+{
+  "source": "Suno lyric alignment (model output; not independently ear-verified)",
+  "song_id": "cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+  "scene_transitions": [
+    {
+      "at": 71.614,
+      "to": "back"
+    },
+    {
+      "at": 102.903,
+      "to": "front"
+    },
+    {
+      "at": 149.374,
+      "to": "back"
+    },
+    {
+      "at": 170.991,
+      "to": "front"
+    },
+    {
+      "at": 207.788,
+      "to": "back"
+    },
+    {
+      "at": 226.315,
+      "to": "front"
+    }
+  ],
+  "lines": [
+    {
+      "text": "It's 2 AM, the city glows",
+      "start": 25.09,
+      "end": 27.18,
+      "words": [
+        {
+          "text": "It's",
+          "start": 25.09,
+          "end": 25.24
+        },
+        {
+          "text": "2",
+          "start": 25.24,
+          "end": 25.33
+        },
+        {
+          "text": "AM",
+          "start": 25.49,
+          "end": 25.89
+        },
+        {
+          "text": "the",
+          "start": 26.17,
+          "end": 26.3
+        },
+        {
+          "text": "city",
+          "start": 26.3,
+          "end": 26.78
+        },
+        {
+          "text": "glows",
+          "start": 26.78,
+          "end": 27.18
+        }
+      ]
+    },
+    {
+      "text": "A thousand warnings on my phone",
+      "start": 27.5,
+      "end": 29.7,
+      "words": [
+        {
+          "text": "A",
+          "start": 27.5,
+          "end": 27.58
+        },
+        {
+          "text": "thousand",
+          "start": 27.63,
+          "end": 28.18
+        },
+        {
+          "text": "warnings",
+          "start": 28.18,
+          "end": 28.84
+        },
+        {
+          "text": "on",
+          "start": 28.84,
+          "end": 29.0
+        },
+        {
+          "text": "my",
+          "start": 29.03,
+          "end": 29.26
+        },
+        {
+          "text": "phone",
+          "start": 29.3,
+          "end": 29.7
+        }
+      ]
+    },
+    {
+      "text": "Somebody says we ought to stop",
+      "start": 29.79,
+      "end": 31.94,
+      "words": [
+        {
+          "text": "Somebody",
+          "start": 29.79,
+          "end": 30.45
+        },
+        {
+          "text": "says",
+          "start": 30.45,
+          "end": 30.89
+        },
+        {
+          "text": "we",
+          "start": 31.02,
+          "end": 31.25
+        },
+        {
+          "text": "ought",
+          "start": 31.26,
+          "end": 31.49
+        },
+        {
+          "text": "to",
+          "start": 31.49,
+          "end": 31.57
+        },
+        {
+          "text": "stop",
+          "start": 31.57,
+          "end": 31.94
+        }
+      ]
+    },
+    {
+      "text": "Somebody says we're too far gone",
+      "start": 32.26,
+      "end": 34.68,
+      "words": [
+        {
+          "text": "Somebody",
+          "start": 32.26,
+          "end": 32.92
+        },
+        {
+          "text": "says",
+          "start": 32.92,
+          "end": 33.27
+        },
+        {
+          "text": "we're",
+          "start": 33.37,
+          "end": 33.57
+        },
+        {
+          "text": "too",
+          "start": 33.57,
+          "end": 33.9
+        },
+        {
+          "text": "far",
+          "start": 33.9,
+          "end": 34.16
+        },
+        {
+          "text": "gone",
+          "start": 34.36,
+          "end": 34.68
+        }
+      ]
+    },
+    {
+      "text": "And you ask me what I believe",
+      "start": 34.9,
+      "end": 37.0,
+      "words": [
+        {
+          "text": "And",
+          "start": 34.9,
+          "end": 35.01
+        },
+        {
+          "text": "you",
+          "start": 35.01,
+          "end": 35.21
+        },
+        {
+          "text": "ask",
+          "start": 35.21,
+          "end": 35.45
+        },
+        {
+          "text": "me",
+          "start": 35.45,
+          "end": 35.73
+        },
+        {
+          "text": "what",
+          "start": 35.89,
+          "end": 36.13
+        },
+        {
+          "text": "I",
+          "start": 36.13,
+          "end": 36.31
+        },
+        {
+          "text": "believe",
+          "start": 36.44,
+          "end": 37.0
+        }
+      ]
+    },
+    {
+      "text": "While rain is running down the street",
+      "start": 37.14,
+      "end": 39.43,
+      "words": [
+        {
+          "text": "While",
+          "start": 37.14,
+          "end": 37.37
+        },
+        {
+          "text": "rain",
+          "start": 37.37,
+          "end": 37.73
+        },
+        {
+          "text": "is",
+          "start": 37.74,
+          "end": 37.99
+        },
+        {
+          "text": "running",
+          "start": 37.99,
+          "end": 38.48
+        },
+        {
+          "text": "down",
+          "start": 38.48,
+          "end": 38.82
+        },
+        {
+          "text": "the",
+          "start": 38.82,
+          "end": 38.95
+        },
+        {
+          "text": "street",
+          "start": 38.95,
+          "end": 39.43
+        }
+      ]
+    },
+    {
+      "text": "I don't know how the story ends",
+      "start": 39.61,
+      "end": 41.78,
+      "words": [
+        {
+          "text": "I",
+          "start": 39.61,
+          "end": 39.69
+        },
+        {
+          "text": "don't",
+          "start": 39.83,
+          "end": 40.08
+        },
+        {
+          "text": "know",
+          "start": 40.08,
+          "end": 40.32
+        },
+        {
+          "text": "how",
+          "start": 40.32,
+          "end": 40.69
+        },
+        {
+          "text": "the",
+          "start": 40.79,
+          "end": 40.94
+        },
+        {
+          "text": "story",
+          "start": 40.94,
+          "end": 41.42
+        },
+        {
+          "text": "ends",
+          "start": 41.42,
+          "end": 41.78
+        }
+      ]
+    },
+    {
+      "text": "But I know who I want with me",
+      "start": 42.2,
+      "end": 44.02,
+      "words": [
+        {
+          "text": "But",
+          "start": 42.2,
+          "end": 42.35
+        },
+        {
+          "text": "I",
+          "start": 42.35,
+          "end": 42.5
+        },
+        {
+          "text": "know",
+          "start": 42.5,
+          "end": 42.74
+        },
+        {
+          "text": "who",
+          "start": 42.74,
+          "end": 43.09
+        },
+        {
+          "text": "I",
+          "start": 43.11,
+          "end": 43.4
+        },
+        {
+          "text": "want",
+          "start": 43.4,
+          "end": 43.73
+        },
+        {
+          "text": "with",
+          "start": 43.73,
+          "end": 43.86
+        },
+        {
+          "text": "me",
+          "start": 43.86,
+          "end": 44.02
+        }
+      ]
+    },
+    {
+      "text": "If there's a switch, who's holding on?",
+      "start": 44.32,
+      "end": 46.23,
+      "words": [
+        {
+          "text": "If",
+          "start": 44.32,
+          "end": 44.48
+        },
+        {
+          "text": "there's",
+          "start": 44.48,
+          "end": 44.65
+        },
+        {
+          "text": "a",
+          "start": 44.65,
+          "end": 44.7
+        },
+        {
+          "text": "switch",
+          "start": 44.7,
+          "end": 45.06
+        },
+        {
+          "text": "who's",
+          "start": 45.06,
+          "end": 45.32
+        },
+        {
+          "text": "holding",
+          "start": 45.35,
+          "end": 45.97
+        },
+        {
+          "text": "on",
+          "start": 45.99,
+          "end": 46.23
+        }
+      ]
+    },
+    {
+      "text": "If there's a door, who holds the key?",
+      "start": 46.75,
+      "end": 48.73,
+      "words": [
+        {
+          "text": "If",
+          "start": 46.75,
+          "end": 46.91
+        },
+        {
+          "text": "there's",
+          "start": 46.91,
+          "end": 47.13
+        },
+        {
+          "text": "a",
+          "start": 47.13,
+          "end": 47.23
+        },
+        {
+          "text": "door",
+          "start": 47.23,
+          "end": 47.49
+        },
+        {
+          "text": "who",
+          "start": 47.49,
+          "end": 47.76
+        },
+        {
+          "text": "holds",
+          "start": 47.76,
+          "end": 48.28
+        },
+        {
+          "text": "the",
+          "start": 48.28,
+          "end": 48.41
+        },
+        {
+          "text": "key",
+          "start": 48.41,
+          "end": 48.73
+        }
+      ]
+    },
+    {
+      "text": "And if we're building something bigger",
+      "start": 49.14,
+      "end": 51.36,
+      "words": [
+        {
+          "text": "And",
+          "start": 49.14,
+          "end": 49.33
+        },
+        {
+          "text": "if",
+          "start": 49.33,
+          "end": 49.49
+        },
+        {
+          "text": "we're",
+          "start": 49.49,
+          "end": 49.69
+        },
+        {
+          "text": "building",
+          "start": 49.69,
+          "end": 50.13
+        },
+        {
+          "text": "something",
+          "start": 50.13,
+          "end": 50.85
+        },
+        {
+          "text": "bigger",
+          "start": 50.88,
+          "end": 51.36
+        }
+      ]
+    },
+    {
+      "text": "Will there be room for you and me?",
+      "start": 51.61,
+      "end": 53.48,
+      "words": [
+        {
+          "text": "Will",
+          "start": 51.61,
+          "end": 51.8
+        },
+        {
+          "text": "there",
+          "start": 51.8,
+          "end": 52.01
+        },
+        {
+          "text": "be",
+          "start": 52.01,
+          "end": 52.08
+        },
+        {
+          "text": "room",
+          "start": 52.08,
+          "end": 52.4
+        },
+        {
+          "text": "for",
+          "start": 52.43,
+          "end": 52.67
+        },
+        {
+          "text": "you",
+          "start": 52.69,
+          "end": 53.01
+        },
+        {
+          "text": "and",
+          "start": 53.05,
+          "end": 53.29
+        },
+        {
+          "text": "me",
+          "start": 53.3,
+          "end": 53.48
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow",
+      "start": 54.25,
+      "end": 56.35,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 54.25,
+          "end": 55.14
+        },
+        {
+          "text": "owns",
+          "start": 55.14,
+          "end": 55.71
+        },
+        {
+          "text": "tomorrow",
+          "start": 55.71,
+          "end": 56.35
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns the sky",
+      "start": 56.68,
+      "end": 58.71,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 56.68,
+          "end": 57.54
+        },
+        {
+          "text": "owns",
+          "start": 57.54,
+          "end": 58.05
+        },
+        {
+          "text": "the",
+          "start": 58.06,
+          "end": 58.35
+        },
+        {
+          "text": "sky",
+          "start": 58.35,
+          "end": 58.71
+        }
+      ]
+    },
+    {
+      "text": "We're just trying to find a reason",
+      "start": 59.06,
+      "end": 60.97,
+      "words": [
+        {
+          "text": "We're",
+          "start": 59.06,
+          "end": 59.26
+        },
+        {
+          "text": "just",
+          "start": 59.26,
+          "end": 59.34
+        },
+        {
+          "text": "trying",
+          "start": 59.34,
+          "end": 59.82
+        },
+        {
+          "text": "to",
+          "start": 59.85,
+          "end": 59.99
+        },
+        {
+          "text": "find",
+          "start": 59.99,
+          "end": 60.33
+        },
+        {
+          "text": "a",
+          "start": 60.37,
+          "end": 60.49
+        },
+        {
+          "text": "reason",
+          "start": 60.49,
+          "end": 60.97
+        }
+      ]
+    },
+    {
+      "text": "To keep these little lights alive",
+      "start": 61.12,
+      "end": 63.63,
+      "words": [
+        {
+          "text": "To",
+          "start": 61.12,
+          "end": 61.24
+        },
+        {
+          "text": "keep",
+          "start": 61.24,
+          "end": 61.53
+        },
+        {
+          "text": "these",
+          "start": 61.53,
+          "end": 61.88
+        },
+        {
+          "text": "little",
+          "start": 61.88,
+          "end": 62.39
+        },
+        {
+          "text": "lights",
+          "start": 62.39,
+          "end": 63.23
+        },
+        {
+          "text": "alive",
+          "start": 63.23,
+          "end": 63.63
+        }
+      ]
+    },
+    {
+      "text": "And if the whole world changes",
+      "start": 64.02,
+      "end": 66.14,
+      "words": [
+        {
+          "text": "And",
+          "start": 64.02,
+          "end": 64.26
+        },
+        {
+          "text": "if",
+          "start": 64.32,
+          "end": 64.61
+        },
+        {
+          "text": "the",
+          "start": 64.62,
+          "end": 64.82
+        },
+        {
+          "text": "whole",
+          "start": 64.82,
+          "end": 65.12
+        },
+        {
+          "text": "world",
+          "start": 65.12,
+          "end": 65.44
+        },
+        {
+          "text": "changes",
+          "start": 65.44,
+          "end": 66.14
+        }
+      ]
+    },
+    {
+      "text": "Before the morning light",
+      "start": 66.6,
+      "end": 68.56,
+      "words": [
+        {
+          "text": "Before",
+          "start": 66.6,
+          "end": 67.03
+        },
+        {
+          "text": "the",
+          "start": 67.03,
+          "end": 67.26
+        },
+        {
+          "text": "morning",
+          "start": 67.26,
+          "end": 68.16
+        },
+        {
+          "text": "light",
+          "start": 68.16,
+          "end": 68.56
+        }
+      ]
+    },
+    {
+      "text": "Leave a little room for everyone",
+      "start": 68.81,
+      "end": 71.13,
+      "words": [
+        {
+          "text": "Leave",
+          "start": 68.81,
+          "end": 69.05
+        },
+        {
+          "text": "a",
+          "start": 69.05,
+          "end": 69.15
+        },
+        {
+          "text": "little",
+          "start": 69.15,
+          "end": 69.58
+        },
+        {
+          "text": "room",
+          "start": 69.58,
+          "end": 69.97
+        },
+        {
+          "text": "for",
+          "start": 70.04,
+          "end": 70.42
+        },
+        {
+          "text": "everyone",
+          "start": 70.42,
+          "end": 71.13
+        }
+      ]
+    },
+    {
+      "text": "On the other side",
+      "start": 71.61,
+      "end": 73.27,
+      "words": [
+        {
+          "text": "On",
+          "start": 71.61,
+          "end": 71.77
+        },
+        {
+          "text": "the",
+          "start": 71.9,
+          "end": 72.21
+        },
+        {
+          "text": "other",
+          "start": 72.23,
+          "end": 72.95
+        },
+        {
+          "text": "side",
+          "start": 72.95,
+          "end": 73.27
+        }
+      ]
+    },
+    {
+      "text": "On the other side",
+      "start": 91.24,
+      "end": 92.79,
+      "words": [
+        {
+          "text": "On",
+          "start": 91.24,
+          "end": 91.58
+        },
+        {
+          "text": "the",
+          "start": 91.58,
+          "end": 91.74
+        },
+        {
+          "text": "other",
+          "start": 91.74,
+          "end": 92.14
+        },
+        {
+          "text": "side",
+          "start": 92.47,
+          "end": 92.79
+        }
+      ]
+    },
+    {
+      "text": "Another promise on a screen",
+      "start": 102.9,
+      "end": 104.79,
+      "words": [
+        {
+          "text": "Another",
+          "start": 102.9,
+          "end": 103.29
+        },
+        {
+          "text": "promise",
+          "start": 103.29,
+          "end": 103.82
+        },
+        {
+          "text": "on",
+          "start": 103.82,
+          "end": 104.13
+        },
+        {
+          "text": "a",
+          "start": 104.15,
+          "end": 104.29
+        },
+        {
+          "text": "screen",
+          "start": 104.29,
+          "end": 104.79
+        }
+      ]
+    },
+    {
+      "text": "Another beautiful machine",
+      "start": 105.29,
+      "end": 107.18,
+      "words": [
+        {
+          "text": "Another",
+          "start": 105.29,
+          "end": 105.69
+        },
+        {
+          "text": "beautiful",
+          "start": 105.69,
+          "end": 106.41
+        },
+        {
+          "text": "machine",
+          "start": 106.5,
+          "end": 107.18
+        }
+      ]
+    },
+    {
+      "text": "Another voice that tells us why",
+      "start": 107.7,
+      "end": 109.56,
+      "words": [
+        {
+          "text": "Another",
+          "start": 107.7,
+          "end": 108.09
+        },
+        {
+          "text": "voice",
+          "start": 108.09,
+          "end": 108.46
+        },
+        {
+          "text": "that",
+          "start": 108.46,
+          "end": 108.64
+        },
+        {
+          "text": "tells",
+          "start": 108.64,
+          "end": 109.04
+        },
+        {
+          "text": "us",
+          "start": 109.05,
+          "end": 109.3
+        },
+        {
+          "text": "why",
+          "start": 109.3,
+          "end": 109.56
+        }
+      ]
+    },
+    {
+      "text": "We have to choose a side",
+      "start": 109.9,
+      "end": 112.22,
+      "words": [
+        {
+          "text": "We",
+          "start": 109.9,
+          "end": 110.31
+        },
+        {
+          "text": "have",
+          "start": 110.51,
+          "end": 110.93
+        },
+        {
+          "text": "to",
+          "start": 110.94,
+          "end": 111.1
+        },
+        {
+          "text": "choose",
+          "start": 111.14,
+          "end": 111.59
+        },
+        {
+          "text": "a",
+          "start": 111.59,
+          "end": 111.89
+        },
+        {
+          "text": "side",
+          "start": 111.9,
+          "end": 112.22
+        }
+      ]
+    },
+    {
+      "text": "But somewhere underneath the noise",
+      "start": 112.5,
+      "end": 114.85,
+      "words": [
+        {
+          "text": "But",
+          "start": 112.5,
+          "end": 112.56
+        },
+        {
+          "text": "somewhere",
+          "start": 112.56,
+          "end": 113.4
+        },
+        {
+          "text": "underneath",
+          "start": 113.4,
+          "end": 113.83
+        },
+        {
+          "text": "the",
+          "start": 113.83,
+          "end": 114.11
+        },
+        {
+          "text": "noise",
+          "start": 114.11,
+          "end": 114.85
+        }
+      ]
+    },
+    {
+      "text": "A million little human voices",
+      "start": 114.91,
+      "end": 117.25,
+      "words": [
+        {
+          "text": "A",
+          "start": 114.91,
+          "end": 115.05
+        },
+        {
+          "text": "million",
+          "start": 115.07,
+          "end": 115.42
+        },
+        {
+          "text": "little",
+          "start": 115.42,
+          "end": 115.9
+        },
+        {
+          "text": "human",
+          "start": 115.92,
+          "end": 116.48
+        },
+        {
+          "text": "voices",
+          "start": 116.51,
+          "end": 117.25
+        }
+      ]
+    },
+    {
+      "text": "Are singing something out of tune",
+      "start": 117.32,
+      "end": 119.11,
+      "words": [
+        {
+          "text": "Are",
+          "start": 117.32,
+          "end": 117.44
+        },
+        {
+          "text": "singing",
+          "start": 117.44,
+          "end": 117.76
+        },
+        {
+          "text": "something",
+          "start": 117.76,
+          "end": 118.31
+        },
+        {
+          "text": "out",
+          "start": 118.31,
+          "end": 118.61
+        },
+        {
+          "text": "of",
+          "start": 118.62,
+          "end": 118.78
+        },
+        {
+          "text": "tune",
+          "start": 118.79,
+          "end": 119.11
+        }
+      ]
+    },
+    {
+      "text": "And making something beautiful",
+      "start": 119.28,
+      "end": 121.56,
+      "words": [
+        {
+          "text": "And",
+          "start": 119.28,
+          "end": 119.46
+        },
+        {
+          "text": "making",
+          "start": 119.46,
+          "end": 120.07
+        },
+        {
+          "text": "something",
+          "start": 120.07,
+          "end": 120.79
+        },
+        {
+          "text": "beautiful",
+          "start": 120.84,
+          "end": 121.56
+        }
+      ]
+    },
+    {
+      "text": "If there's a switch, who's holding on?",
+      "start": 122.18,
+      "end": 124.13,
+      "words": [
+        {
+          "text": "If",
+          "start": 122.18,
+          "end": 122.34
+        },
+        {
+          "text": "there's",
+          "start": 122.36,
+          "end": 122.51
+        },
+        {
+          "text": "a",
+          "start": 122.51,
+          "end": 122.62
+        },
+        {
+          "text": "switch",
+          "start": 122.62,
+          "end": 122.91
+        },
+        {
+          "text": "who's",
+          "start": 122.91,
+          "end": 123.18
+        },
+        {
+          "text": "holding",
+          "start": 123.18,
+          "end": 123.81
+        },
+        {
+          "text": "on",
+          "start": 123.82,
+          "end": 124.13
+        }
+      ]
+    },
+    {
+      "text": "If there's a door, who holds the key?",
+      "start": 124.58,
+      "end": 126.55,
+      "words": [
+        {
+          "text": "If",
+          "start": 124.58,
+          "end": 124.74
+        },
+        {
+          "text": "there's",
+          "start": 124.76,
+          "end": 124.97
+        },
+        {
+          "text": "a",
+          "start": 124.97,
+          "end": 125.07
+        },
+        {
+          "text": "door",
+          "start": 125.07,
+          "end": 125.33
+        },
+        {
+          "text": "who",
+          "start": 125.33,
+          "end": 125.59
+        },
+        {
+          "text": "holds",
+          "start": 125.59,
+          "end": 126.13
+        },
+        {
+          "text": "the",
+          "start": 126.14,
+          "end": 126.25
+        },
+        {
+          "text": "key",
+          "start": 126.25,
+          "end": 126.55
+        }
+      ]
+    },
+    {
+      "text": "And if we're building something bigger",
+      "start": 126.98,
+      "end": 129.15,
+      "words": [
+        {
+          "text": "And",
+          "start": 126.98,
+          "end": 127.17
+        },
+        {
+          "text": "if",
+          "start": 127.17,
+          "end": 127.33
+        },
+        {
+          "text": "we're",
+          "start": 127.33,
+          "end": 127.55
+        },
+        {
+          "text": "building",
+          "start": 127.55,
+          "end": 127.98
+        },
+        {
+          "text": "something",
+          "start": 127.98,
+          "end": 128.67
+        },
+        {
+          "text": "bigger",
+          "start": 128.67,
+          "end": 129.15
+        }
+      ]
+    },
+    {
+      "text": "Will there be room for you and me?",
+      "start": 129.41,
+      "end": 131.3,
+      "words": [
+        {
+          "text": "Will",
+          "start": 129.41,
+          "end": 129.63
+        },
+        {
+          "text": "there",
+          "start": 129.63,
+          "end": 129.83
+        },
+        {
+          "text": "be",
+          "start": 129.83,
+          "end": 129.89
+        },
+        {
+          "text": "room",
+          "start": 129.89,
+          "end": 130.2
+        },
+        {
+          "text": "for",
+          "start": 130.2,
+          "end": 130.44
+        },
+        {
+          "text": "you",
+          "start": 130.47,
+          "end": 130.85
+        },
+        {
+          "text": "and",
+          "start": 130.87,
+          "end": 131.09
+        },
+        {
+          "text": "me",
+          "start": 131.09,
+          "end": 131.3
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow",
+      "start": 132.02,
+      "end": 134.12,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 132.02,
+          "end": 132.9
+        },
+        {
+          "text": "owns",
+          "start": 132.9,
+          "end": 133.48
+        },
+        {
+          "text": "tomorrow",
+          "start": 133.48,
+          "end": 134.12
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns the sky",
+      "start": 134.43,
+      "end": 136.44,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 134.43,
+          "end": 135.36
+        },
+        {
+          "text": "owns",
+          "start": 135.36,
+          "end": 135.89
+        },
+        {
+          "text": "the",
+          "start": 135.89,
+          "end": 136.11
+        },
+        {
+          "text": "sky",
+          "start": 136.11,
+          "end": 136.44
+        }
+      ]
+    },
+    {
+      "text": "We're just trying to find a reason",
+      "start": 136.85,
+      "end": 138.77,
+      "words": [
+        {
+          "text": "We're",
+          "start": 136.85,
+          "end": 137.03
+        },
+        {
+          "text": "just",
+          "start": 137.03,
+          "end": 137.16
+        },
+        {
+          "text": "trying",
+          "start": 137.16,
+          "end": 137.65
+        },
+        {
+          "text": "to",
+          "start": 137.65,
+          "end": 137.75
+        },
+        {
+          "text": "find",
+          "start": 137.75,
+          "end": 138.11
+        },
+        {
+          "text": "a",
+          "start": 138.11,
+          "end": 138.25
+        },
+        {
+          "text": "reason",
+          "start": 138.25,
+          "end": 138.77
+        }
+      ]
+    },
+    {
+      "text": "To keep these little lights alive",
+      "start": 138.88,
+      "end": 141.39,
+      "words": [
+        {
+          "text": "To",
+          "start": 138.88,
+          "end": 139.02
+        },
+        {
+          "text": "keep",
+          "start": 139.02,
+          "end": 139.32
+        },
+        {
+          "text": "these",
+          "start": 139.32,
+          "end": 139.64
+        },
+        {
+          "text": "little",
+          "start": 139.64,
+          "end": 140.18
+        },
+        {
+          "text": "lights",
+          "start": 140.18,
+          "end": 140.99
+        },
+        {
+          "text": "alive",
+          "start": 140.99,
+          "end": 141.39
+        }
+      ]
+    },
+    {
+      "text": "And if the whole world changes",
+      "start": 141.77,
+      "end": 143.85,
+      "words": [
+        {
+          "text": "And",
+          "start": 141.77,
+          "end": 142.01
+        },
+        {
+          "text": "if",
+          "start": 142.08,
+          "end": 142.37
+        },
+        {
+          "text": "the",
+          "start": 142.39,
+          "end": 142.58
+        },
+        {
+          "text": "whole",
+          "start": 142.58,
+          "end": 142.88
+        },
+        {
+          "text": "world",
+          "start": 142.88,
+          "end": 143.2
+        },
+        {
+          "text": "changes",
+          "start": 143.2,
+          "end": 143.85
+        }
+      ]
+    },
+    {
+      "text": "Before the morning light",
+      "start": 144.37,
+      "end": 146.32,
+      "words": [
+        {
+          "text": "Before",
+          "start": 144.37,
+          "end": 144.79
+        },
+        {
+          "text": "the",
+          "start": 144.79,
+          "end": 145.02
+        },
+        {
+          "text": "morning",
+          "start": 145.02,
+          "end": 145.92
+        },
+        {
+          "text": "light",
+          "start": 145.92,
+          "end": 146.32
+        }
+      ]
+    },
+    {
+      "text": "Leave a little room for everyone",
+      "start": 146.61,
+      "end": 148.92,
+      "words": [
+        {
+          "text": "Leave",
+          "start": 146.61,
+          "end": 146.82
+        },
+        {
+          "text": "a",
+          "start": 146.82,
+          "end": 146.92
+        },
+        {
+          "text": "little",
+          "start": 146.92,
+          "end": 147.34
+        },
+        {
+          "text": "room",
+          "start": 147.34,
+          "end": 147.73
+        },
+        {
+          "text": "for",
+          "start": 147.8,
+          "end": 148.14
+        },
+        {
+          "text": "everyone",
+          "start": 148.19,
+          "end": 148.92
+        }
+      ]
+    },
+    {
+      "text": "On the other side",
+      "start": 149.37,
+      "end": 151.09,
+      "words": [
+        {
+          "text": "On",
+          "start": 149.37,
+          "end": 149.53
+        },
+        {
+          "text": "the",
+          "start": 149.68,
+          "end": 149.97
+        },
+        {
+          "text": "other",
+          "start": 149.98,
+          "end": 150.77
+        },
+        {
+          "text": "side",
+          "start": 150.77,
+          "end": 151.09
+        }
+      ]
+    },
+    {
+      "text": "On the other side",
+      "start": 159.14,
+      "end": 160.87,
+      "words": [
+        {
+          "text": "On",
+          "start": 159.14,
+          "end": 159.44
+        },
+        {
+          "text": "the",
+          "start": 159.44,
+          "end": 159.68
+        },
+        {
+          "text": "other",
+          "start": 159.74,
+          "end": 160.14
+        },
+        {
+          "text": "side",
+          "start": 160.54,
+          "end": 160.87
+        }
+      ]
+    },
+    {
+      "text": "Maybe we're afraid of falling",
+      "start": 170.99,
+      "end": 172.94,
+      "words": [
+        {
+          "text": "Maybe",
+          "start": 170.99,
+          "end": 171.31
+        },
+        {
+          "text": "we're",
+          "start": 171.31,
+          "end": 171.7
+        },
+        {
+          "text": "afraid",
+          "start": 171.7,
+          "end": 172.21
+        },
+        {
+          "text": "of",
+          "start": 172.22,
+          "end": 172.38
+        },
+        {
+          "text": "falling",
+          "start": 172.38,
+          "end": 172.94
+        }
+      ]
+    },
+    {
+      "text": "Maybe we're afraid to fly",
+      "start": 173.11,
+      "end": 175.2,
+      "words": [
+        {
+          "text": "Maybe",
+          "start": 173.11,
+          "end": 173.7
+        },
+        {
+          "text": "we're",
+          "start": 173.7,
+          "end": 174.1
+        },
+        {
+          "text": "afraid",
+          "start": 174.1,
+          "end": 174.61
+        },
+        {
+          "text": "to",
+          "start": 174.61,
+          "end": 174.79
+        },
+        {
+          "text": "fly",
+          "start": 174.79,
+          "end": 175.2
+        }
+      ]
+    },
+    {
+      "text": "Maybe all the answers",
+      "start": 176.11,
+      "end": 177.97,
+      "words": [
+        {
+          "text": "Maybe",
+          "start": 176.11,
+          "end": 176.61
+        },
+        {
+          "text": "all",
+          "start": 176.78,
+          "end": 177.02
+        },
+        {
+          "text": "the",
+          "start": 177.04,
+          "end": 177.2
+        },
+        {
+          "text": "answers",
+          "start": 177.2,
+          "end": 177.97
+        }
+      ]
+    },
+    {
+      "text": "Are just questions in disguise",
+      "start": 178.03,
+      "end": 180.95,
+      "words": [
+        {
+          "text": "Are",
+          "start": 178.03,
+          "end": 178.29
+        },
+        {
+          "text": "just",
+          "start": 178.3,
+          "end": 178.55
+        },
+        {
+          "text": "questions",
+          "start": 178.55,
+          "end": 179.23
+        },
+        {
+          "text": "in",
+          "start": 179.23,
+          "end": 180.31
+        },
+        {
+          "text": "disguise",
+          "start": 180.31,
+          "end": 180.95
+        }
+      ]
+    },
+    {
+      "text": "But I can hear you calling...",
+      "start": 183.32,
+      "end": 186.33,
+      "words": [
+        {
+          "text": "But",
+          "start": 183.32,
+          "end": 183.46
+        },
+        {
+          "text": "I",
+          "start": 183.46,
+          "end": 183.68
+        },
+        {
+          "text": "can",
+          "start": 183.73,
+          "end": 184.04
+        },
+        {
+          "text": "hear",
+          "start": 184.26,
+          "end": 184.95
+        },
+        {
+          "text": "you",
+          "start": 184.95,
+          "end": 185.27
+        },
+        {
+          "text": "calling",
+          "start": 185.43,
+          "end": 186.33
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow!",
+      "start": 190.41,
+      "end": 192.51,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 190.41,
+          "end": 191.32
+        },
+        {
+          "text": "owns",
+          "start": 191.32,
+          "end": 191.77
+        },
+        {
+          "text": "tomorrow",
+          "start": 191.87,
+          "end": 192.51
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns the sky!",
+      "start": 192.88,
+      "end": 194.87,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 192.88,
+          "end": 193.76
+        },
+        {
+          "text": "owns",
+          "start": 193.76,
+          "end": 194.29
+        },
+        {
+          "text": "the",
+          "start": 194.29,
+          "end": 194.51
+        },
+        {
+          "text": "sky",
+          "start": 194.51,
+          "end": 194.87
+        }
+      ]
+    },
+    {
+      "text": "We're just trying to find a reason",
+      "start": 195.29,
+      "end": 197.15,
+      "words": [
+        {
+          "text": "We're",
+          "start": 195.29,
+          "end": 195.43
+        },
+        {
+          "text": "just",
+          "start": 195.43,
+          "end": 195.58
+        },
+        {
+          "text": "trying",
+          "start": 195.58,
+          "end": 196.05
+        },
+        {
+          "text": "to",
+          "start": 196.05,
+          "end": 196.15
+        },
+        {
+          "text": "find",
+          "start": 196.15,
+          "end": 196.52
+        },
+        {
+          "text": "a",
+          "start": 196.52,
+          "end": 196.64
+        },
+        {
+          "text": "reason",
+          "start": 196.64,
+          "end": 197.15
+        }
+      ]
+    },
+    {
+      "text": "To keep these little lights alive!",
+      "start": 197.28,
+      "end": 199.79,
+      "words": [
+        {
+          "text": "To",
+          "start": 197.28,
+          "end": 197.42
+        },
+        {
+          "text": "keep",
+          "start": 197.42,
+          "end": 197.73
+        },
+        {
+          "text": "these",
+          "start": 197.73,
+          "end": 198.04
+        },
+        {
+          "text": "little",
+          "start": 198.04,
+          "end": 198.57
+        },
+        {
+          "text": "lights",
+          "start": 198.57,
+          "end": 199.39
+        },
+        {
+          "text": "alive",
+          "start": 199.39,
+          "end": 199.79
+        }
+      ]
+    },
+    {
+      "text": "And if the whole world changes",
+      "start": 200.17,
+      "end": 202.29,
+      "words": [
+        {
+          "text": "And",
+          "start": 200.17,
+          "end": 200.45
+        },
+        {
+          "text": "if",
+          "start": 200.48,
+          "end": 200.77
+        },
+        {
+          "text": "the",
+          "start": 200.78,
+          "end": 200.98
+        },
+        {
+          "text": "whole",
+          "start": 200.98,
+          "end": 201.28
+        },
+        {
+          "text": "world",
+          "start": 201.28,
+          "end": 201.67
+        },
+        {
+          "text": "changes",
+          "start": 201.67,
+          "end": 202.29
+        }
+      ]
+    },
+    {
+      "text": "Before the morning light",
+      "start": 202.77,
+      "end": 204.72,
+      "words": [
+        {
+          "text": "Before",
+          "start": 202.77,
+          "end": 203.18
+        },
+        {
+          "text": "the",
+          "start": 203.18,
+          "end": 203.42
+        },
+        {
+          "text": "morning",
+          "start": 203.42,
+          "end": 204.32
+        },
+        {
+          "text": "light",
+          "start": 204.32,
+          "end": 204.72
+        }
+      ]
+    },
+    {
+      "text": "Leave a little room for everyone",
+      "start": 205.03,
+      "end": 207.34,
+      "words": [
+        {
+          "text": "Leave",
+          "start": 205.03,
+          "end": 205.26
+        },
+        {
+          "text": "a",
+          "start": 205.26,
+          "end": 205.37
+        },
+        {
+          "text": "little",
+          "start": 205.37,
+          "end": 205.74
+        },
+        {
+          "text": "room",
+          "start": 205.74,
+          "end": 206.14
+        },
+        {
+          "text": "for",
+          "start": 206.2,
+          "end": 206.56
+        },
+        {
+          "text": "everyone",
+          "start": 206.58,
+          "end": 207.34
+        }
+      ]
+    },
+    {
+      "text": "On the other side!",
+      "start": 207.79,
+      "end": 209.8,
+      "words": [
+        {
+          "text": "On",
+          "start": 207.79,
+          "end": 207.95
+        },
+        {
+          "text": "the",
+          "start": 208.06,
+          "end": 208.42
+        },
+        {
+          "text": "other",
+          "start": 208.42,
+          "end": 208.82
+        },
+        {
+          "text": "side",
+          "start": 209.17,
+          "end": 209.8
+        }
+      ]
+    },
+    {
+      "text": "On the other side...",
+      "start": 217.55,
+      "end": 219.99,
+      "words": [
+        {
+          "text": "On",
+          "start": 217.55,
+          "end": 217.84
+        },
+        {
+          "text": "the",
+          "start": 217.84,
+          "end": 218.13
+        },
+        {
+          "text": "other",
+          "start": 218.14,
+          "end": 218.54
+        },
+        {
+          "text": "side",
+          "start": 218.85,
+          "end": 219.99
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow...",
+      "start": 226.32,
+      "end": 229.81,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 226.32,
+          "end": 227.88
+        },
+        {
+          "text": "owns",
+          "start": 227.88,
+          "end": 229.15
+        },
+        {
+          "text": "tomorrow",
+          "start": 229.15,
+          "end": 229.81
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow...",
+      "start": 239.07,
+      "end": 241.26,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 239.07,
+          "end": 239.96
+        },
+        {
+          "text": "owns",
+          "start": 239.96,
+          "end": 240.51
+        },
+        {
+          "text": "tomorrow",
+          "start": 240.51,
+          "end": 241.26
+        }
+      ]
+    },
+    {
+      "text": "Nobody owns tomorrow...",
+      "start": 243.95,
+      "end": 246.09,
+      "words": [
+        {
+          "text": "Nobody",
+          "start": 243.95,
+          "end": 244.84
+        },
+        {
+          "text": "owns",
+          "start": 244.84,
+          "end": 245.39
+        },
+        {
+          "text": "tomorrow",
+          "start": 245.39,
+          "end": 246.09
+        }
+      ]
+    }
+  ]
+}
