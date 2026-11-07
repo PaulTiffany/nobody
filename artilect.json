@@ -2,15 +2,42 @@
   "schema": 1,
   "title": "Nobody Owns Tomorrow — The Other Side (V6 music video)",
   "summary": "A boy dreams beside a glowing Night-Brite whose pegs open into a miniature 2.5D disco; a synchronized pop music video creatively responds to an AI conversation.",
-  "media_url": "",
-  "media_path": "output/scene-flips-preview.mp4",
+  "media_url": "https://github.com/PaulTiffany/nobody/tree/main/output/v6-media",
+  "media_path": "",
   "media_type": "video",
-  "reproduce": "See production/music_video_v6/README.md; provide the creator-owned WAV and run Pillow+FFmpeg with supplied model-derived Suno word timing. The full master/compact MP4s can also be reassembled with python output/v6-media/reassemble.py.",
-  "rights_notes": "The COMPLETE V6 music video, including song audio, is already publicly accessible as reassemblable chunks in output/v6-media. Suno song source: https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3. Suno Pro status observed at audit time is not evidence of paid entitlement at creation, authorized original download or cleared commercial distribution. Confirm before monetized YouTube use. media_path is ONLY a legacy silent prototype, not V6. Source interview is linked, not sampled. Actual V6 execution: Pillow, NumPy, FFmpeg plus externally supplied Suno timing; ELYSY and UseSuno MV Studio are pinned historical options, NOT executed.",
+  "reproduce": "Read production/README.md. V6 sound-on MP4 reassembles from output/v6-media/reassemble.py; source reproduction requires creator-owned WAV, preserved Suno MCP alignment, Pillow, NumPy, FFmpeg and fonts.",
+  "rights_notes": "Sound-on V6 film is publicly stored as Git chunks; original separate WAV not tracked. Suno commercial/distribution rights and permitted download remain unverified. Cover was generated through OpenAI image generation and contains third-party branding references for review. The interim media_url points to GitHub reconstruction files, not a direct video player; replace with YouTube URL. Panel interview linked, not sampled; no endorsement.",
   "source_song_url": "https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
   "source_song_id": "cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
   "source_interview_url": "https://www.youtube.com/watch?v=NXITvkHIV9o",
   "source_interview_timestamps_path": "production/music_video_v6/Nobody_V6_Music_To_Source_Provenance.json",
   "production_provenance_path": "production/music_video_v6/RELEASE_PROVENANCE.md",
-  "release_status": "V6 cut rendered; YouTube video URL pending; structure passes but rights and clean rebuild are not independently qualified"
+  "release_status": "V6 complete; the temporary GitHub media_url is for the reassemblable original V6 cut, NOT a watch URL; no YouTube publication yet.",
+  "credits": {
+    "creator": "Paul Carver Tiffany III",
+    "ai_collaborator": "ChatGPT 6 (OpenAI)",
+    "song": "Suno",
+    "analysis": "Suno MCP integration",
+    "cover_art": "ChatGPT 6 + OpenAI image generation",
+    "procedural_visuals": "Pillow + NumPy",
+    "video_encoding": "FFmpeg"
+  },
+  "active_upstream_git_submodules": [
+    "Pillow",
+    "FFmpeg"
+  ],
+  "active_external_tools": [
+    "Suno MCP",
+    "OpenAI image generation"
+  ],
+  "installed_dependencies": [
+    "NumPy",
+    "DejaVu fonts"
+  ],
+  "historical_not_executed_v6": [
+    "ELYSY",
+    "UseSuno MV Studio"
+  ],
+  "credits_path": "production/music_video_v6/CREATIVE_CREDITS.md",
+  "cover_art_provenance_path": "production/music_video_v6/ART_ASSET_PROVENANCE.json"
 }

@@ -1,0 +1,39 @@
+{
+  "schema": "nobody-art-provenance/1",
+  "creator": "Paul Carver Tiffany III",
+  "collaborator": "ChatGPT 6 (OpenAI)",
+  "as_of": "2026-11-07",
+  "assets": [
+    {
+      "kind": "Original cover/thumbnail illustration",
+      "origin": "OpenAI image generation invoked by ChatGPT 6",
+      "file": "a_vibrant_cinematic_neon_retro_illustrated_ip_co.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 2490869,
+      "sha256": "bb8061bc41364837828ddcd2ee7914d3a0ab6ebfbf3e1eace2119827d4c90346",
+      "committed_to_git": false
+    },
+    {
+      "kind": "GitHub social preview derivative",
+      "origin": "Optimized crop from generated illustration",
+      "file": "Nobody_Owns_Tomorrow_GitHub_Social_Preview.jpg",
+      "dimensions": [
+        1280,
+        640
+      ],
+      "bytes": 393856,
+      "sha256": "9ffd726531bad70adc6108a8f97051e278fd2ebbef3733aee378772bb64fc41b",
+      "committed_to_git": false
+    },
+    {
+      "kind": "V6 animated film graphics",
+      "origin": "Custom code-driven rendering with Pillow, NumPy, FFmpeg under Paul's direction",
+      "source_path": "production/music_video_v6/",
+      "committed_to_git": true
+    }
+  ],
+  "notes": "Promotional illustration and JPEG were delivered in this chat; their upload to GitHub Social Preview settings is not independently verified. The promotional image includes references/marks to Suno and the podcast, which require branding review. The film's procedural frames were NOT generated using the cover-art image model."
+}

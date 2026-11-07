@@ -1,38 +1,30 @@
-# Nobody Owns Tomorrow — V6 release provenance and Artilect evidence
+# V6 release and Artilect provenance (2026-11-07)
 
-**Audit date:** 2026-11-07. This documents the cut already rendered; it does not certify rights or represent a new video render.
+**Created and directed by Paul Carver Tiffany III, collaborating with ChatGPT 6 (OpenAI).** [Full credits](CREATIVE_CREDITS.md).
 
-## Creative source graph
+## Actual creative source graph
 
-| Layer | Source | Relationship / status |
+| Layer | Verified source | Status |
 |---|---|---|
-| Original song | [Suno clip `cf3d6b12-d528-4193-a8f0-7f4e9b997ea3`](https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3) | `Nobody Owns Tomorrow`, created 2026-11-01, 263.24 seconds. Creator-supplied WAV used for the music-video soundtrack. No separate WAV stored in Git. |
-| Music-driven timing | [Stored Suno word alignment](nobody_suno_word_alignment.json) | Model-generated word spans, best effort; some directorial adjustments (approximately 0.32 s anticipation) are distinct from sung onsets. Independent full ear verification not claimed. |
-| Artistic direction | [27-shot directed V6 cues](Nobody_V6_Directors_Cues.json) | Music-section/phrase/shot choreography, iterative user corrections V1–V6, miniature sprite world and dream scenes. |
-| Rendered film | [Checksummed V6 master and compact files](../../output/v6-media/README.md) | Sound-on H.264/AAC videos retained as public, byte-exact chunks. Reassembler and GitHub Actions verify assembled SHA-256; this does *not* establish a fresh source-to-video deterministic rebuild. |
-| Discussion interpreted | [Beyond Tomorrow original episode](https://www.youtube.com/watch?v=NXITvkHIV9o) | Independent musical response, not clips, quotes, paraphrased speaker lyrics, or guest endorsement. |
-| Interpretive source map | [Timestamped thematic associations](Nobody_V6_Music_To_Source_Provenance.json) | 11 pairs linking original interview moments to artistic themes; source timestamps are the panel's clock and our_video timestamps are the song's clock. |
-| Upload copy | [Description](YOUTUBE_PASTE_DESCRIPTION.txt) and [pinned comment](YOUTUBE_PINNED_COMMENT.txt) | Drafts; not yet a posted YouTube release. |
+| Original music | [Nobody Owns Tomorrow on Suno](https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3) | Suno-created song, Nov 1 2026; 263.24s; clip `cf3d6b12-d528-4193-a8f0-7f4e9b997ea3`. |
+| Timing | Suno MCP song analysis and [committed alignment JSON](nobody_suno_word_alignment.json) | Connector readback confirms 432 beats, 15 sections, 362 machine-aligned entries. Best-effort word boundaries; not ear-certified. |
+| Creator direction | [27-shot V6 direction](Nobody_V6_Directors_Cues.json) | Human-supervised music-sensitive visual cuts and corrections. |
+| Video imagery | [Six-layer procedural Pillow/NumPy renderer](README.md) | In-video graphics and 2.5D dancing light-sprites computed in Python, **not from the cover-image generator**. |
+| Final video encoding | FFmpeg | H.264 video / AAC original song; [checksummed full and compact encodes](../../output/v6-media/README.md) reconstructed from public chunks. |
+| Cover / thumbnail | ChatGPT 6 with OpenAI image generation | Original generated cover illustration, optimized GitHub social preview. [Hashes, dimensions and caveats](ART_ASSET_PROVENANCE.json); session media files not recorded as Git binaries. |
+| Intellectual source | [The Beyond Tomorrow Podcast](https://www.youtube.com/watch?v=NXITvkHIV9o) | [11 timestamped, explicitly interpretive connections](Nobody_V6_Music_To_Source_Provenance.json), no podcast footage or direct guest endorsement. |
+| Publication copy | [YouTube description](YOUTUBE_PASTE_DESCRIPTION.txt) · [comment](YOUTUBE_PINNED_COMMENT.txt) | Drafts; video not uploaded to YouTube. |
 
-## Actual V6 technology used, as distinct from pinned historical candidates
+## Actual tools versus historical candidates
 
-| Component | Upstream | Provenance |
-|---|---|---|
-| Pillow | https://github.com/python-pillow/Pillow | **Used** to draw, composite, and transform the images. Direct Git submodule is pinned; Python runtime package was separately installed. |
-| FFmpeg | https://github.com/FFmpeg/FFmpeg | **Used** for H.264/AAC encoding and validation. Direct Git submodule pinned; actual runtime was an installed FFmpeg binary, not built from the pinned source. Binary redistribution/codec licenses are build-dependent. |
-| NumPy | https://github.com/numpy/numpy | **Used** for raster masks, spatial compositing and numerical operations. Installed package; **not one of the four direct Git submodules**. License: BSD-3-Clause. |
-| Suno service | https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3 | **Used** for original song creation and its retained word timing. Service, not open-source Git technology; do not present it as a Git submodule or open-source dependency. |
-| ELYSY | https://github.com/gabrielxcom/elysy | **Not executed in V6.** Pinned, historically proposed alignment engine. Its presence is not an execution receipt. |
-| UseSuno MV Studio | https://github.com/UseSuno/UseSunoMVStudio | **Not executed in V6.** Pinned, historically proposed karaoke renderer. Its AGPL-3.0-only license remains its own. |
-| DejaVu fonts | https://dejavu-fonts.github.io/ | Used for visual text in the rendering environment. Font licensing and machine availability are separate from source Gitlinks. |
+**Suno MCP** is an actively used connected service for clip metadata, audio timing and word alignment. **OpenAI image generation** is an actively used service for promotional art; **ChatGPT 6** is credited for creative/code collaboration. Neither is an open-source Git submodule. **Pillow** ([original upstream](https://github.com/python-pillow/Pillow), MIT-CMU) and **FFmpeg** ([original upstream](https://github.com/FFmpeg/FFmpeg), license depends on build) are the two executed, independently developed **direct/pinned upstream Git submodules** required by Artilect. NumPy ([upstream](https://github.com/numpy/numpy), BSD-3-Clause) is an installed numerical code dependency; DejaVu fonts are a separate resource.
 
-The pinned submodule commits have independently resolved in their original GitHub repositories; their Gitlink commit SHAs remain recorded in the repository. See [toolchain snapshot](TOOLCHAIN_EXECUTION.json) for the specific runtime versions visible at the latest audit. Those versions must **not** be retroactively claimed as independently proven original-render versions.
+**Do not cite ELYSY, WhisperX or UseSuno MV Studio as executed V6 technologies.** Earlier exploration is archived in [the legacy recipe](../LEGACY_PRE_V6_WORKFLOW.md) and Git history, not current `technologies/` Gitlinks.
 
-## Known limits and release gates
+## Evidence limitations
 
-- The public repository contains the V6 **video plus soundtrack**, split into binary parts. Avoid claiming the audio is unpublished or secret simply because the source WAV is not separately tracked.
-- The `artilect.json.media_path` currently selects the early silent clip, solely to satisfy the gallery's committed-file constraint. **Do not submit it as the finished V6 film.** Replace it with the real public YouTube video URL in `media_url` after the video is uploaded.
-- Reproduce new video frames with the creator's WAV, supplied aligner JSON, Python/Pillow/NumPy, FFmpeg/libx264 and the DejaVu font family. The original renderer still has Linux font paths and old absolute-path auxiliary tooling. No clean-machine full audiovisual rebuild is certified.
-- Verify what Suno commercial terms applied when this clip was created, that this specific audio file was obtained under permitted download conditions, and its intended public/monetized usage. Current account plan is **not** proof of past creation or download rights.
-- YouTube upload, generated-content disclosure, and Artilect showcase submission remain creator-controlled. The original interview is credited, timestamp-linked, and not sampled.
-- Avoid implying endorsement by the podcast, individual speakers, the Night-Brite/Lite-Brite trademark owners, or Suno.
+- V6 source assets, Cues, timings and audio-backed film are preserved; GitHub CI reassembly hash verification has passed. This is **not** a clean-machine full-render replication.
+- The original WAV is **not** separately tracked, but it is audible inside the public assembled MP4s.
+- Cover/thumbnail was created here but its binary is not tracked; whether the social-preview JPEG was uploaded to GitHub Settings is not confirmed.
+- Commercial use and original Suno download entitlement remain creator-review items; do not infer solely from current plan. Image contains third-party branding references that should be reviewed before independent-IP publication.
+- `artilect.json.media_url` temporarily links to the **current GitHub V6 media-reconstruction directory**, not an immediately playable video. Replace it with the YouTube watch URL when published; do not mistake structural pass for final gallery readiness.

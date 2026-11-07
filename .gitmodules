@@ -1,9 +1,3 @@
-[submodule "technologies/ELYSY"]
-	path = technologies/ELYSY
-	url = https://github.com/gabrielxcom/elysy.git
-[submodule "technologies/UseSunoMVStudio"]
-	path = technologies/UseSunoMVStudio
-	url = https://github.com/UseSuno/UseSunoMVStudio.git
 [submodule "technologies/Pillow"]
 	path = technologies/Pillow
 	url = https://github.com/python-pillow/Pillow.git

@@ -1,3 +1,5 @@
+Created/directed by Paul Carver Tiffany III with ChatGPT 6 (OpenAI). Song: Suno. Timing: Suno MCP. Cover: OpenAI image generation. Animation: Pillow/NumPy/FFmpeg.
+
 This song is our artistic response to a conversation about humanity's future, not an attempt to speak on behalf of the panelists. ❤️
 
 Original discussion: https://www.youtube.com/watch?v=NXITvkHIV9o

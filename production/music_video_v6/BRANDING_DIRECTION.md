@@ -1,5 +1,7 @@
 # Nobody Owns Tomorrow — cover art and channel-branding direction
 
+**Existing artwork is already generated** by ChatGPT 6 through OpenAI image generation, with Paul Carver Tiffany III directing. The image and compressed social-preview derivative were delivered via the creative session; the exact file hashes are recorded in [ART_ASSET_PROVENANCE.json](ART_ASSET_PROVENANCE.json). The image includes Suno/podcast branding references, which need review before an independent-IP YouTube thumbnail is published. Whether GitHub Settings currently uses it is not verified.
+
 ## Primary original-IP image (song cover / YouTube thumbnail)
 An original, story-consistent scene: a dreaming child beside a luminous pegboard toy, with an impossible crowd of tiny multicolored light-sprite dancers emerging from the glowing board. The camera discovers a fantastic little dimensional doorway within one light peg. Beyond the bedroom window, neighboring rooms glow in different colors. Pop-cinematic, warm, playful, memorable at thumbnail size.
 
@@ -14,4 +16,4 @@ Song source: https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3
 Interview source: https://www.youtube.com/watch?v=NXITvkHIV9o
 Technology and reproduction: https://github.com/PaulTiffany/nobody
 
-This file is a creative brief; it does not assert that the final cover has been generated or published.
+The cover was **generated** but public YouTube use has not been verified. No square-album-cover crop is independently certified.

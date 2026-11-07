@@ -2,6 +2,12 @@
 
 This folder is the **actual latest locally rendered production** and supporting source, as distinct from the repository's historical scene-flips experiment. Nothing here is a claim that the V6 performance has been posted to YouTube.
 
+## Creators and current graphics provenance
+
+**Paul Carver Tiffany III — creator and lead director. ChatGPT 6 (OpenAI) — creative/technical collaborator.** Original song through Suno; musical analysis and aligned words provided through **Suno MCP**; cover/thumbnail artwork generated separately with **OpenAI image generation**. Video frames were produced by custom Pillow/NumPy drawing, spatial projection and FFmpeg. [Full credits](CREATIVE_CREDITS.md) · [Artwork hashes](ART_ASSET_PROVENANCE.json).
+
+**Artilect direct Git submodules for active V6:** Pillow and FFmpeg. ELYSY and UseSuno MV Studio were historical candidates, not used; see `production/LEGACY_PRE_V6_WORKFLOW.md`.
+
 ## Source recording and citation
 
 - [Suno original — Nobody Owns Tomorrow](https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3), clip `cf3d6b12-d528-4193-a8f0-7f4e9b997ea3`, created 2026-11-01.
@@ -48,4 +54,4 @@ This work is an artist-directed musical response, not a substitute for the sourc
 
 ## Rights and publication
 
-The source song was supplied by its creator. Check the Suno subscription/commercial use terms that applied when the song was generated before releasing to YouTube; YouTube AI-use disclosure and source attributions also need final creator review. Previous production docs explicitly kept full media out of Git. This commit updates the readable project source without leaking the unverified master WAV or large encoded film. YouTube is **not published** from this push.
+The source song was supplied by its creator. Check the Suno subscription/commercial use terms that applied when the song was generated before releasing to YouTube; YouTube AI-use disclosure and source attributions also need final creator review. Earlier plans proposed leaving full video out of Git, but the current public repository **does preserve the complete sound-on V6 film as byte-exact chunks**. The original master WAV remains separately untracked. YouTube is **not published** from this push.

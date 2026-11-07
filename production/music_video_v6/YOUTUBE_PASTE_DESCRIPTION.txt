@@ -42,10 +42,19 @@ This is the source song, not a separate finished-video link.
 03:49 Sprites fill the bedroom
 03:59 The city lights up
 
+🎵 CREDITS
+Created and directed by Paul Carver Tiffany III
+Creative and technical collaborator: ChatGPT 6 (OpenAI)
+Original song: Suno — https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3
+Music timing and lyric alignment: Suno MCP integration (best-effort machine alignment)
+Cover/thumbnail artwork: ChatGPT 6 + OpenAI image generation
+Animated video imagery: custom procedural Pillow + NumPy renderer; FFmpeg encoding
+Software and source receipts: https://github.com/PaulTiffany/nobody
+
 🎵 MUSIC + PRODUCTION
 Original song: “Nobody Owns Tomorrow” (Suno-assisted production)
 Suno clip: https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3
 Production and upstream technology credits: https://github.com/PaulTiffany/nobody
-Music, visual direction, and animated artwork were developed as a collaborative creative production. The illustrated scenes use a deterministic renderer and a Suno-aligned lyric/beat timeline, not generated live-action footage. Original interview clips and speakers' likenesses are not used in this video.
+Music, visual direction, and animated artwork were developed as a collaborative creative production. The illustrated scenes use a Pillow/NumPy procedural renderer and Suno MCP timing data, not generated live-action footage. The separately made thumbnail uses OpenAI image generation, not the in-film sprite frames. Original interview clips and speakers' likenesses are not used in this video.
 
 #NobodyOwnsTomorrow #AIMusicVideo #Transhumanism #AI #NightBrite

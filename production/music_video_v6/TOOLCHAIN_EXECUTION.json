@@ -21,18 +21,6 @@
       "repo": "https://github.com/FFmpeg/FFmpeg",
       "sha": "3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587",
       "v6_executed": true
-    },
-    {
-      "name": "ELYSY",
-      "repo": "https://github.com/gabrielxcom/elysy",
-      "sha": "ebafd908b6ba93275cc557b5837d2b87d29b15e0",
-      "v6_executed": false
-    },
-    {
-      "name": "UseSunoMVStudio",
-      "repo": "https://github.com/UseSuno/UseSunoMVStudio",
-      "sha": "1f2ad0f5186573671f0006040de3ed52cb26eb9b",
-      "v6_executed": false
     }
   ],
   "source_song": {
@@ -52,5 +40,34 @@
     "result": "passed",
     "scope": "Existing-workspace storyboard generation, NOT a clean-machine or full video reproduce"
   },
-  "audio_video_integrity": "CI byte-reassembly and SHA-256 verification; original audio is within publicly stored MP4 chunks."
+  "audio_video_integrity": "CI byte-reassembly and SHA-256 verification; original audio is within publicly stored MP4 chunks.",
+  "historical_tools_not_executed_in_v6": [
+    "ELYSY",
+    "UseSuno MV Studio"
+  ],
+  "connected_service_evidence": {
+    "service": "Suno MCP",
+    "song_url": "https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+    "song_id": "cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+    "audio_analysis_status": "complete",
+    "beat_events": 432,
+    "acoustic_sections": 15,
+    "word_alignment_status": "complete",
+    "machine_aligned_entries": 362
+  },
+  "separate_art_generation": {
+    "service": "OpenAI image generation",
+    "directed_by": "Paul Carver Tiffany III with ChatGPT 6",
+    "asset_provenance_path": "production/music_video_v6/ART_ASSET_PROVENANCE.json",
+    "is_source_of_film_frames": false
+  },
+  "creative_credits": {
+    "creator": "Paul Carver Tiffany III",
+    "ai_collaborator": "ChatGPT 6 (OpenAI)"
+  },
+  "additional_installed_dependencies": [
+    "NumPy",
+    "DejaVu Sans fonts"
+  ],
+  "note": "Pinned gitlinks indicate exact source provenance; not binaries compiled from those commits. Hosted services are not direct git submodules; royalty/commercial rights remain separate."
 }
