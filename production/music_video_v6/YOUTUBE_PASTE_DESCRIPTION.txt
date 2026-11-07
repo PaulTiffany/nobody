@@ -20,6 +20,10 @@ The interview moments our song plays with:
 
 These are thematic connections selected by the music-video creators, not claims about any speaker's agreement with the song.
 
+🎵 ORIGINAL SONG (SUNO)
+Nobody Owns Tomorrow — https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3
+This is the source song, not a separate finished-video link.
+
 🎬 MUSIC VIDEO CHAPTERS
 00:00 The bedroom
 00:25 The Night-Brite comes alive
@@ -40,6 +44,8 @@ These are thematic connections selected by the music-video creators, not claims 
 
 🎵 MUSIC + PRODUCTION
 Original song: “Nobody Owns Tomorrow” (Suno-assisted production)
+Suno clip: https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3
+Production and upstream technology credits: https://github.com/PaulTiffany/nobody
 Music, visual direction, and animated artwork were developed as a collaborative creative production. The illustrated scenes use a deterministic renderer and a Suno-aligned lyric/beat timeline, not generated live-action footage. Original interview clips and speakers' likenesses are not used in this video.
 
 #NobodyOwnsTomorrow #AIMusicVideo #Transhumanism #AI #NightBrite

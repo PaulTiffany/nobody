@@ -1,0 +1,56 @@
+{
+  "schema": "nobody-v6-toolchain-observation/1",
+  "as_of": "2026-11-07",
+  "observation_scope": "Packages and installed binaries inspected in the current container during provenance review. Does not prove these exact runtime versions created the preexisting V6 master.",
+  "observed_runtime": {
+    "python": "3.13.5",
+    "pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "ffmpeg": "7.1.5-0+deb13u1",
+    "font_family": "DejaVu Sans (Linux fixed-path usage; exact font version not captured)"
+  },
+  "exact_pinned_upstreams": [
+    {
+      "name": "Pillow",
+      "repo": "https://github.com/python-pillow/Pillow",
+      "sha": "bb1d8e8ab8d29048624d96e3ee53cecf7c13d13d",
+      "v6_executed": true
+    },
+    {
+      "name": "FFmpeg",
+      "repo": "https://github.com/FFmpeg/FFmpeg",
+      "sha": "3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587",
+      "v6_executed": true
+    },
+    {
+      "name": "ELYSY",
+      "repo": "https://github.com/gabrielxcom/elysy",
+      "sha": "ebafd908b6ba93275cc557b5837d2b87d29b15e0",
+      "v6_executed": false
+    },
+    {
+      "name": "UseSunoMVStudio",
+      "repo": "https://github.com/UseSuno/UseSunoMVStudio",
+      "sha": "1f2ad0f5186573671f0006040de3ed52cb26eb9b",
+      "v6_executed": false
+    }
+  ],
+  "source_song": {
+    "url": "https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+    "id": "cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+    "duration_s": 263.24,
+    "created_at": "2026-11-01T03:29:48.413Z",
+    "commercial_use_verified": false,
+    "download_entitlement_verified": false
+  },
+  "source_interview": {
+    "url": "https://www.youtube.com/watch?v=NXITvkHIV9o",
+    "association": "Creator-selected interpretations linked by timestamps"
+  },
+  "smoke_test": {
+    "command": "NOBODY_MEDIA_ROOT=/mnt/data python /mnt/data/nobody_v5/nobody_dream_rave_v6_renderer.py --stills-only",
+    "result": "passed",
+    "scope": "Existing-workspace storyboard generation, NOT a clean-machine or full video reproduce"
+  },
+  "audio_video_integrity": "CI byte-reassembly and SHA-256 verification; original audio is within publicly stored MP4 chunks."
+}

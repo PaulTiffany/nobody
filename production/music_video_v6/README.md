@@ -2,6 +2,13 @@
 
 This folder is the **actual latest locally rendered production** and supporting source, as distinct from the repository's historical scene-flips experiment. Nothing here is a claim that the V6 performance has been posted to YouTube.
 
+## Source recording and citation
+
+- [Suno original — Nobody Owns Tomorrow](https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3), clip `cf3d6b12-d528-4193-a8f0-7f4e9b997ea3`, created 2026-11-01.
+- [Original Beyond Tomorrow panel interview](https://www.youtube.com/watch?v=NXITvkHIV9o).
+- [Release/provenance matrix](RELEASE_PROVENANCE.md) | [Toolchain environment snapshot](TOOLCHAIN_EXECUTION.json).
+- The V6 video is our artistic response and not an official panel, Suno, or toy-brand collaboration.
+
 ## Contents
 
 - Six cumulative renderer modules (`nobody_dream_rave_renderer.py`, `..._v2...` through `..._v6...`). The V6 script imports the earlier layers; **all six are required**.

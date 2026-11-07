@@ -1,3 +1,5 @@
+> **CURRENT PRODUCTION NOTICE (V6, 2026-11-07):** This page documents the historical ELYSY → MV Studio route, **which was not executed for V6**. The completed V6 film uses Suno-provided word alignment, custom Pillow/NumPy visual rendering, and FFmpeg. See [current V6 source](music_video_v6/README.md), [release provenance](music_video_v6/RELEASE_PROVENANCE.md), and [the original Suno recording](https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3). The old draft scene-cue constraints below apply to the historical workflow, not the V6 release cut.
+
 # Nobody — producer's recipe
 
 This is an **Artilect production**, not a new karaoke application. Make a film using other people's original open-source projects, give them credit, and keep the source/version trail. Here is the workflow, in order.

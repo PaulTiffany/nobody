@@ -6,5 +6,11 @@
   "media_path": "output/scene-flips-preview.mp4",
   "media_type": "video",
   "reproduce": "See production/music_video_v6/README.md; provide the creator-owned WAV and run Pillow+FFmpeg with supplied model-derived Suno word timing. The full master/compact MP4s can also be reassembled with python output/v6-media/reassemble.py.",
-  "rights_notes": "Full V6 MP4s are preserved as reassemblable byte-exact chunks in output/v6-media; no YouTube publication. The media_path is an early silent prototype, not the V6 video. Creator supplied music. Verify Suno commercial terms; no original interview footage included. Pillow/FFmpeg licenses independent. ELYSY and MV Studio are pinned but were not executed in V6."
+  "rights_notes": "The COMPLETE V6 music video, including song audio, is already publicly accessible as reassemblable chunks in output/v6-media. Suno song source: https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3. Suno Pro status observed at audit time is not evidence of paid entitlement at creation, authorized original download or cleared commercial distribution. Confirm before monetized YouTube use. media_path is ONLY a legacy silent prototype, not V6. Source interview is linked, not sampled. Actual V6 execution: Pillow, NumPy, FFmpeg plus externally supplied Suno timing; ELYSY and UseSuno MV Studio are pinned historical options, NOT executed.",
+  "source_song_url": "https://suno.com/song/cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+  "source_song_id": "cf3d6b12-d528-4193-a8f0-7f4e9b997ea3",
+  "source_interview_url": "https://www.youtube.com/watch?v=NXITvkHIV9o",
+  "source_interview_timestamps_path": "production/music_video_v6/Nobody_V6_Music_To_Source_Provenance.json",
+  "production_provenance_path": "production/music_video_v6/RELEASE_PROVENANCE.md",
+  "release_status": "V6 cut rendered; YouTube video URL pending; structure passes but rights and clean rebuild are not independently qualified"
 }
