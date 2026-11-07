@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check production structure (never execute upstream technologies)
+      - name: Install Pillow for the existing film state regression test
+        run: python -m pip install "Pillow>=11,<13"
+      - name: Check production structure and existing scene tests
         run: |
           python scripts/validate.py
           python scripts/check_scene_cues.py
